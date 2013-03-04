@@ -1,0 +1,201 @@
+// ***********************
+//         BASE
+// ***********************
+
+// * applied to element through element-, descendent or child-selector along with pseudo class
+// * doesn't include any classes or ID selectors
+// * defining default styling, how an element should look in all occurrences on the page
+// * Example: a { color: red; }, body, form { margin: 0; padding: 0; }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    *START* FONT
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('_/fonts/ubuntu-b-webfont.eot');
+    src: url('_/fonts/ubuntu-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_/fonts/ubuntu-b-webfont.woff') format('woff'),
+         url('_/fonts/ubuntu-b-webfont.ttf') format('truetype'),
+         url('_/fonts/ubuntu-b-webfont.svg#ubuntubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ @font-face {
+    font-family: 'ubuntumedium';
+    src: url('_/fonts/ubuntu-m-webfont.eot');
+    src: url('_/fonts/ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_/fonts/ubuntu-m-webfont.woff') format('woff'),
+         url('_/fonts/ubuntu-m-webfont.ttf') format('truetype'),
+         url('_/fonts/ubuntu-m-webfont.svg#ubuntumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('_/fonts/ubuntu-l-webfont.eot');
+    src: url('_/fonts/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_/fonts/ubuntu-l-webfont.woff') format('woff'),
+         url('_/fonts/ubuntu-l-webfont.ttf') format('truetype'),
+         url('_/fonts/ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url('_/fonts/ubuntu-li-webfont.eot');
+    src: url('_/fonts/ubuntu-li-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_/fonts/ubuntu-li-webfont.woff') format('woff'),
+         url('_/fonts/ubuntu-li-webfont.ttf') format('truetype'),
+         url('_/fonts/ubuntu-li-webfont.svg#ubuntulight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----------------------------------------------------------------------------------*/
+/*    *END* FONT
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    *START* KEYFRAMES ANIMATION
+/*-----------------------------------------------------------------------------------*/
+/* Location In The Air */
+@include keyframe(location){
+    0%  { margin-top: 0; }
+    50% { margin-top: -10px;} 
+    100% { margin-top: 0; }
+}
+
+
+/* Swinging Devices */
+/* Swinging Devices */
+@-webkit-keyframes swinging {
+    0% { -webkit-transform: rotate(1deg); }
+    50% { -webkit-transform: rotate(-1deg); }
+    100% { -webkit-transform: rotate(1deg); }
+}
+
+@-moz-keyframes swinging {
+    0% { -moz-transform: rotate(1deg); }
+    50% { -moz-transform: rotate(-1deg); }
+    100% { -moz-transform: rotate(1deg); }
+}
+
+@-o-keyframes swinging {
+    0% { -o-transform: rotate(1deg); }
+    50% { -o-transform: rotate(-1deg); }
+    100% { -o-transform: rotate(1deg); }
+}
+
+@keyframes swinging {
+    0% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    100% { transform: rotate(1deg); }
+}
+
+/* Lines Fall */
+
+@-webkit-keyframes fall {
+0% { opacity: 1; -webkit-transform: scale(1.0); }
+100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+
+/* Fade in + Opacity*/
+@-webkit-keyframes fadeInDownOpacity {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@-moz-keyframes fadeInDown {
+    0% { opacity: 0; -moz-transform: translateY(-20px);}
+    100% { opacity: 1; -moz-transform: translateY(0); }
+}
+
+@-o-keyframes fadeInDown {
+    0% { opacity: 0; -ms-transform: translateY(-20px); }
+    100% { opacity: 1; -ms-transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade in - Opacity*/
+@-webkit-keyframes fadeInDown {
+    0% { -webkit-transform: translateY(-40px); }
+    100% { -webkit-transform: translateY(0); }
+}
+
+@-moz-keyframes fadeInDown {
+    0% { -moz-transform: translateY(-40px);}
+    100% { -moz-transform: translateY(0); }
+}
+
+@-o-keyframes fadeInDown {
+    0% { -ms-transform: translateY(-40px); }
+    100% { -ms-transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    0% { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+}
+
+.delay-one {
+    @include vendor(animation-delay, 1s);
+}
+
+.animated {
+    @include vendor(animation-fill-mode, both);
+    @include vendor(animation-duration, 1s);
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+/*-----------------------------------------------------------------------------------*/
+/*    *END* KEYFRAMES ANIMATION
+/*-----------------------------------------------------------------------------------*/
+
+
+html { 
+    @include font-family('ubuntulight');
+    font-weight: 300;
+    background: $grey;
+    color: $greyfont;
+}
+
+a:hover { text-decoration: none; }
+
+input, textarea { border: 0; }
+
+.font-bold { @include font-family('ubuntubold'); }
+.font-medium { @include font-family('ubuntumedium'); }
+.font-light { @include font-family('ubuntulight'); }
+.font-italic { @include font-family('ubuntulight_italic'); }
+
+.clearfix { clear: both; }
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+
+
+
+

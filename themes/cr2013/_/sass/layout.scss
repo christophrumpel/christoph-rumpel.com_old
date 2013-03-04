@@ -1,0 +1,22 @@
+// ***********************
+//         LAYOUT
+// ***********************
+
+// * minor components: callout, login-form, navigation item… = Modules
+// * major components: header, footer = Layout styles
+// * generally layout styles only single selector
+// * Example: #article { border: solid 1px grey; }, #header { width: 960px; margin: auto; }
+
+.wrapper {
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 $main-margin;
+	position: relative;
+}
+
+	.content-wrapper {
+		min-height: 30em;
+		padding: 2*$main-margin $main-margin;
+	}
+
+	nav { overflow: hidden; }

@@ -1,0 +1,120 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin margin-bottom($margin){
+    margin-bottom: $margin;
+    margin-bottom:($margin / $base-font-size)*1rem;
+}
+
+@mixin margin-top($margin){
+    margin-top: $margin;
+    margin-top:($margin / $base-font-size)*1rem;
+}
+
+@mixin circle($width : 100px, $color : #CC0066) {
+	width: $width;
+	height: $width;
+	background: $color;
+	@include border-radius($width);
+}
+
+@mixin font-family($family) {
+	font-family: $family, sans-serif;
+}
+
+// Heart
+@mixin heart($width: 100px, $color: #CC0066) {
+
+    position: relative;
+    width: $width;
+    height: $width / 1,1;
+
+	&:before,&:after {
+	    position: absolute;
+	    content: "";
+	    left: $width/2;
+	    top: 0;
+	    width: $width/2;
+	    height: $width / 1.25;
+	    background: $color;
+	    -moz-border-radius: $width/2 $width/2 0 0;
+	    border-radius: $width/2 $width/2 0 0;
+	    -webkit-transform: rotate(-45deg);
+	       -moz-transform: rotate(-45deg);
+	        -ms-transform: rotate(-45deg);
+	         -o-transform: rotate(-45deg);
+	            transform: rotate(-45deg);
+	    -webkit-transform-origin: 0 100%;
+	       -moz-transform-origin: 0 100%;
+	        -ms-transform-origin: 0 100%;
+	         -o-transform-origin: 0 100%;
+	            transform-origin: 0 100%;
+	}
+	&:after {
+	    left: 0;
+	    -webkit-transform: rotate(45deg);
+	       -moz-transform: rotate(45deg);
+	        -ms-transform: rotate(45deg);
+	         -o-transform: rotate(45deg);
+	            transform: rotate(45deg);
+	    -webkit-transform-origin: 100% 100%;
+	       -moz-transform-origin: 100% 100%;
+	        -ms-transform-origin: 100% 100%;
+	         -o-transform-origin: 100% 100%;
+	            transform-origin :100% 100%;
+	}
+}
+
+@mixin theme-colors($color){
+
+	h1, h2, h3 { 
+		color: $color; 
+		ont-weight: normal; 
+	}
+
+	a { color: $color }
+	
+	.theme-color { color: $color; }
+	
+    .logo__circle { @include circle(60px, $color ); }
+    .main-header { border-bottom: 5px solid $color; }
+    .separator { 
+    	background: $color; 
+    	.separator__content { @include circle(36px, $color ); }
+    }
+
+    input, textarea { 
+    	background-color: $color; 
+    }
+
+    /* Styling Selected Text */
+    ::selection{
+	    background-color:$color;
+	    color:#fff;
+	}
+
+	::-moz-selection{
+	    background-color:$color;
+	    color:#fff;
+	}
+
+	/* Styling Input Placeholder */
+	::-webkit-input-placeholder {
+   		color: #fff;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: #fff; 
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #fff;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: #fff; 
+	}
+	.btn {  background-color: $color; }
+}

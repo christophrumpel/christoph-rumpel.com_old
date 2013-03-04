@@ -1,0 +1,15 @@
+// ***********************
+//         STATES
+// ***********************
+
+// * state augments and overrides all other style
+// * accordion section may be in collapsed or expanded stat
+// * message in success or error state
+// * generally applied to sam elements as layout rule or base module class
+// * similar to sub modul style but
+
+//    * state styles can be applied to layout and or module styles
+//    * state style indicates JS dependency (change while the page runs)
+// * use of !important is allowed
+// * if state rule is specific for a module, take module name into state nam
+// * example: .tab{} .is-tab-active{}

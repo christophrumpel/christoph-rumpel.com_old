@@ -1,0 +1,30 @@
+// ***********************
+//         Theme
+// ***********************
+
+// * not used that often, but some project have i need
+// * defines colors, images and the sites look and feel
+// * necessary when you want user to receive different skins
+
+//    * different looks for different sections
+//    * let user customize theme
+//    * different look based on local
+// * for extensive theming use a theme- prefix
+
+/* Theme Color Modifications */
+
+.home{
+    @include theme-colors($cyan);
+}
+
+.page--portfolio{
+    @include theme-colors($blue);
+}
+
+.page--blog{
+    @include theme-colors($pink);
+}
+
+.page--contact{
+    @include theme-colors($orange);
+}
