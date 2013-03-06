@@ -105,7 +105,7 @@
 		<header class="main-header">
 			<div class="wrapper cf">
 				<div class="logo fadeInDown">
-					<a href="#">
+					<a href="<?php echo get_option('home'); ?>">
 						<div class="logo__circle">
 							<img src="<?php bloginfo('template_directory'); ?>/_/img/cr_logo.png" class="logo__img" alt="Christoph Rumpel Logo">
 						</div>

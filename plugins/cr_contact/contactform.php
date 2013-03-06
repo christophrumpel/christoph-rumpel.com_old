@@ -30,7 +30,7 @@ function wptuts_contact_form_sc($atts) {
 		"label_message" => 'What can i do for you?',
 		"label_submit" => 'Send',
 		"error_empty" => 'Oh, did you forget to fill all the <span class="theme-color">fields?</span>.',
-		"error_noemail" => 'Oh, seems like something went wrong. Please check your <span class="theme-color">email address</span>.',
+		"error_noemail" => 'Oh, seems like something went wrong. Please check your <span class="font-bold">email address</span>.',
 		"success" => '<h2>Thanks for your e-mail!</h2><br /><h4>Your lines are already dropping in my direction</h4><div class="contact-lines"></div>'
 	), $atts));
 
@@ -103,7 +103,7 @@ function wptuts_contact_form_sc($atts) {
 		</div>
 		<div class="grid-wrapper">
 			<div class="grid two-thirds palm-one-whole">
-				<h2 class="contact-headline">If you would like to<span class="font-bold"> hire me or </span>just want to get in touch</h2>
+				<h2 class="contact-headline">If you would like to<span class="font-bold"> hire me</span> or just want to get in touch</h2>
 			</div>
 			<div class="grid three-fifths palm-one-whole">
 				<img src="<?php bloginfo('template_directory'); ?>/_/img/icon_dropmealine.png" class="contact-dropmealine" alt="Drop Me A Line"><br />
