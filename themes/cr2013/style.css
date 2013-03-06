@@ -847,15 +847,15 @@ html {
  * heading hierarchy.
  */
 h1, .alpha {
-  font-size: 76px;
-  font-size: 4.75rem;
-  line-height: 1.05263;
+  font-size: 90px;
+  font-size: 5.625rem;
+  line-height: 1.11111;
 }
 
 h2, .beta {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1.25;
+  font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 1.2;
 }
 
 h3, .gamma {
@@ -4362,7 +4362,7 @@ html.flexbox {
 /* Fade in - Opacity*/
 @-webkit-keyframes fadeInDown {
   0% {
-    -webkit-transform: translateY(-40px);
+    -webkit-transform: translateY(-50px);
   }
 
   100% {
@@ -4372,7 +4372,7 @@ html.flexbox {
 
 @-moz-keyframes fadeInDown {
   0% {
-    -moz-transform: translateY(-40px);
+    -moz-transform: translateY(-50px);
   }
 
   100% {
@@ -4382,7 +4382,7 @@ html.flexbox {
 
 @-o-keyframes fadeInDown {
   0% {
-    -ms-transform: translateY(-40px);
+    -ms-transform: translateY(-50px);
   }
 
   100% {
@@ -4392,7 +4392,7 @@ html.flexbox {
 
 @keyframes fadeInDown {
   0% {
-    transform: translateY(-40px);
+    transform: translateY(-50px);
   }
 
   100% {
@@ -4780,7 +4780,6 @@ input, textarea {
 }
 
 .info {
-  margin-bottom: 40px;
   background: #fff;
   padding: 10px 20px;
   z-index: 5;
@@ -4788,13 +4787,36 @@ input, textarea {
 
 .info--top {
   position: absolute;
-  top: 0;
-  right: 40px;
+  top: 0px;
+  left: 40px;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 480px) {
   .info--top {
     right: 0;
     width: 100%;
+  }
+}
+
+.info--job {
+  position: absolute;
+  top: 134px;
+  right: 0;
+  z-index: 5;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .info--job {
+    position: relative;
+    width: 525px;
+    margin: auto;
+    top: 28px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .info--job {
+    position: relative;
+    top: -2px;
   }
 }
 
@@ -4996,8 +5018,14 @@ input, textarea {
 /*-----------------------------------------------------------------------------------*/
 .section-me__icon-hi {
   position: relative;
-  top: 15px;
+  top: 0;
+  margin-right: 20px;
   float: left;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .section-me__icon-hi {
+    float: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   .section-me__icon-hi {
@@ -5016,14 +5044,28 @@ input, textarea {
   }
 }
 
+.grid--header-group {
+  position: relative;
+}
+
 .header-group {
   position: relative;
-  top: 9px;
+  top: -11px;
+  height: 140px;
   white-space: nowrap;
+  z-index: 10;
+  background: #ececec;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .header-group {
+    top: 19px;
+    text-align: center;
+    height: 106px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header-group {
-    height: auto;
+    height: 87px;
     text-align: center;
   }
 }
@@ -5031,7 +5073,16 @@ input, textarea {
   position: relative;
   top: 0px;
   text-transform: uppercase;
+  letter-spacing: -1px;
   font-family: "ubuntubold", sans-serif;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .header-group .header-group__name {
+    font-size: 70px;
+    font-size: 4.375rem;
+    line-height: 1.14286;
+    top: -4px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header-group .header-group__name {
@@ -5042,8 +5093,16 @@ input, textarea {
 }
 .header-group .header-group__passion {
   position: relative;
-  top: -17px;
-  letter-spacing: -2px;
+  top: -15px;
+  left: 3px;
+  letter-spacing: 0px;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .header-group .header-group__passion {
+    font-size: 39px;
+    font-size: 2.4375rem;
+    line-height: 1.02564;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header-group .header-group__passion {
@@ -5051,6 +5110,7 @@ input, textarea {
     font-size: 1.875rem;
     line-height: 1.33333;
     top: -9px;
+    letter-spacing: -2px;
   }
 }
 
@@ -5061,9 +5121,10 @@ input, textarea {
 .grid--location {
   height: 134px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   .grid--location {
     height: auto;
+    text-align: center;
   }
 }
 
@@ -5094,21 +5155,21 @@ input, textarea {
 
 .map {
   position: relative;
-  top: -120px;
-  left: 380px;
-  width: 210px;
+  top: -155px;
+  left: 394px;
+  width: 322px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   .map {
     top: 20px;
-    left: 0;
     margin: auto;
+    left: 0;
   }
 }
 .map .map__location {
   position: absolute;
-  top: -15px;
-  left: 160px;
+  top: 0;
+  left: 242px;
   -webkit-animation: location 3s infinite;
   -moz-animation: location 3s infinite;
   -ms-animation: location 3s infinite;
@@ -5126,15 +5187,31 @@ input, textarea {
   letter-spacing: -2px;
   position: relative;
   top: 15px;
+  line-height: 1em;
+}
+@media only screen and (max-width: 1023px) {
+  .header-iwanttheweb {
+    text-align: center;
+  }
 }
 
 .awesome-sign {
   position: relative;
   height: 295px;
+  left: 150px;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .awesome-sign {
+    width: 530px;
+    margin: auto;
+    left: 5%;
+    top: 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .awesome-sign {
     margin-top: 20px;
+    left: 0;
   }
 }
 
@@ -5190,6 +5267,7 @@ input, textarea {
 
 .awesome-sign__devices-tablet {
   left: 120px;
+  top: 10px;
   -webkit-animation: swinging 3s infinite ease-in-out;
   -moz-animation: swinging 3s infinite ease-in-out;
   -ms-animation: swinging 3s infinite ease-in-out;

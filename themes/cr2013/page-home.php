@@ -5,22 +5,22 @@ Template Name: Home
 ?>
 
 <?php get_header(); ?>
-			<div class="info info--top animated delay-one fadeInDown">I am currently avialable for new projects</div>
 			<section class="section-me"> <!-- START SECTION ME -->
 				<div class="grid-wrapper">
-					<div class="grid one-fifth hide--palm hide--lap">
+					<div class="grid one-fifth hide--lap hide--palm">
 						<img src="<?php bloginfo('template_directory'); ?>/_/img/icon_person.png" alt="Image Profile">
 					</div>
-					<div class="grid four-fifths palm-one-whole lap-one-whole">
+					<div class="grid four-fifths lap-one-whole palm-one-whole">
 						<div class="grid-wrapper">
-							<div class="grid grid--me-hi one-seventh lap-two-eighths palm-one-whole">
+							<div class="grid one-sixth lap-one-whole palm-one-whole text--center">
 								<img class="section-me__icon-hi" src="<?php bloginfo('template_directory'); ?>/_/img/icon_hi.png" alt="Image saying Hi">
 							</div>
-							<div class="grid grid--me-header six-sevenths lap-six-eighths palm-one-whole">
+							<div class="grid five-sixths lap-one-whole palm-one-whole grid--header-group">
 								<hgroup class="header-group">
 									<h1 class="header-group__name">I'm Christoph</h1>
 									<h2 class="header-group__passion">A Passionate Web Developer</h2>
 								</hgroup>
+								<div class="info info--job animated delay-one fadeInDown">and i am currently avialable for new projects</div>
 							</div>
 						</div>
 					</div>
@@ -34,10 +34,10 @@ Template Name: Home
 
 			<section class="section-location"> <!-- START SECTION LOCATION -->
 				<div class="grid-wrapper">
-					<div class="grid one-fifth hide--palm">
+					<div class="grid one-fifth hide--lap hide--palm">
 						<img src="<?php bloginfo('template_directory'); ?>/_/img/icon_location.png" alt="Location Icon">
 					</div>
-					<div class="grid four-fifths palm-one-whole grid--location">
+					<div class="grid four-fifths lap-one-whole palm-one-whole grid--location">
 						<div class="from-austria">
 							<h2 class="from-austria__from">i am from beautiful</h2>
 							<h1 class="from-austria__austria">Austria</h1>
@@ -57,10 +57,10 @@ Template Name: Home
 
 			<section class="section-love"> <!-- START SECTION LOVE -->
 				<div class="grid-wrapper">
-					<div class="grid one-fifth hide--palm">
+					<div class="grid one-fifth hide--lap hide--palm">
 						<img src="<?php bloginfo('template_directory'); ?>/_/img/icon_heart.png" alt="Image of a heart">
 					</div>
-					<div class="grid four-fifths palm-one-whole">
+					<div class="grid four-fifths portable-one-whole">
 						<h2 class="header-iwanttheweb">I want to make the web<br />look & feel</h2>
 						<div class="awesome-sign">
 							<img class="awesome-sign__shadow" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome_shadow.png" alt="Shadow Of Awesome Sign">

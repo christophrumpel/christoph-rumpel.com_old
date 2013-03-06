@@ -63,7 +63,6 @@
 }
 
 .info {
-	margin-bottom: 40px;
 	background: #fff;
 	padding: 10px 20px;
 	z-index: 5;
@@ -71,11 +70,31 @@
 
 .info--top {
 	position: absolute;
-	top: 0;
-	right: $main-margin;
+	top: 0px;
+	left: $main-margin;
+	margin-bottom: $main-margin;
 	@include media-query(palm) {  
 		right: 0;
 		width: 100%; 
+	}
+}
+
+.info--job {
+	position: absolute;
+	top: 134px;
+	right: 0;
+	z-index: 5;
+	
+	@include media-query(lap) {
+		position: relative;
+		width: 525px;
+		margin: auto;
+		top: 28px;
+		text-align: center;
+	}
+	@include media-query(palm) { 
+		position: relative;
+		top: -2px;
 	}
 }
 
@@ -245,8 +264,13 @@
 /*-----------------------------------------------------------------------------------*/
 .section-me__icon-hi {
 	position: relative;
-	top: 15px; 
+	top: 0; 
+	margin-right: 20px;
 	float: left;
+	
+	@include media-query(lap) {
+		float: none;
+	} 
 	@include media-query(palm) { 
 		margin: $main-margin/2 auto;
 		float: none;
@@ -260,42 +284,62 @@
 
 }
 
-.header-group { 
+.grid--header-group {
 	position: relative;
-	top: 9px;
-	white-space: nowrap;
-	
-	@include media-query(palm) {
-		height: auto;
-		text-align: center;
-	}
-	
-	.header-group__name {
+}
+
+	.header-group { 
 		position: relative;
-		top: 0px;
-		text-transform: uppercase;
-		@include font-family('ubuntubold');
+		top: -11px;
+		height: 140px;
+		white-space: nowrap;
+		z-index: 10;
+		background: $grey;
 		
-		@include media-query(palm) { @include font-size(48px); }
-	}
-	.header-group__passion {
-		position: relative;
-		top: -17px; 
-		letter-spacing: -2px;
+		@include media-query(lap) { 
+			top: 19px;
+			text-align: center;
+			height: 106px;
+		}
+		@include media-query(palm) {
+			height: 87px;
+			text-align: center;
+		}
 		
-		@include media-query(palm) { 
-			@include font-size(30px); 
-			top: -9px;
+		.header-group__name {
+			position: relative;
+			top: 0px;
+			text-transform: uppercase;
+			letter-spacing: -1px;
+			@include font-family('ubuntubold');
+			
+			@include media-query(lap) { 
+				@include font-size(70px); 
+				top: -4px;
+			}
+			@include media-query(palm) { @include font-size(48px); }
+		}
+		.header-group__passion {
+			position: relative;
+			top: -15px; 
+			left: 3px;
+			letter-spacing: 0px;
+			
+			@include media-query(lap) { @include font-size(39px); }
+			@include media-query(palm) { 
+				@include font-size(30px); 
+				top: -9px;
+				letter-spacing: -2px;
+			}
 		}
 	}
-}
 
 .section-location {
 	position: relative;
 }
 	.grid--location { 
 		height: 134px; 
-		@include media-query(palm) { height: auto; }	
+		@include media-query(portable) { height: auto; text-align: center; }	
 	}
 	
 	.from-austria {
@@ -324,14 +368,14 @@
 
 		.map {
 			position: relative;
-			top: -120px;
-			left: 380px;
-			width: 210px;
+			top: -155px;
+			left: 394px;
+			width: 322px;
 			
-			@include media-query(palm) { 
+			@include media-query(portable) {
 				top: $main-margin/2;
-				left: 0;
-				margin: auto;	
+				margin: auto;
+				left:0;
 			}
 
 			.map__austria {
@@ -339,8 +383,8 @@
 			}
 			.map__location {
 				position: absolute;
-				top: -15px;
-				left: 160px;
+				top: 0;
+				left: 242px;
 				@include vendor(animation, location 3s infinite);
 			}
 			
@@ -355,14 +399,26 @@
 		letter-spacing: -2px;
 		position: relative;
 		top: 15px;
+		line-height: 1em;
+		
+		 @include media-query(portable) {
+		 	text-align: center;
+		 }
 	}
 
 	.awesome-sign {
 		position: relative;
 		height: 295px;
-		
+		left: 150px;
+		@include media-query(lap) {
+			width: 530px;
+			margin: auto;
+			left: 5%;
+			top: 20px;
+		}
 		@include media-query(palm) {
 			margin-top: 20px;
+			left: 0;
 		}
 	}
 
@@ -410,6 +466,7 @@
 
 		.awesome-sign__devices-tablet {
 			left: 120px;
+			top: 10px;
 			@include vendor(animation, swinging 3s infinite ease-in-out);
 			
 			@include vendor(transform-origin, top);
