@@ -85,7 +85,9 @@
                 $classes[] = 'page--portfolio';
             else if ( is_page(26))
                 $classes[] = 'page--contact';
-             return $classes;
+            else if ( is_page(404))
+                $classes[] = 'page--404';
+            return $classes;
         }
     // Cleaning Terms
     function term_clean($postid, $term) {
