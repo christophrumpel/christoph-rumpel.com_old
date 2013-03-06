@@ -47,7 +47,7 @@
 
 .btn { 
 	color: #fff; 
-	padding: $main-margin/4 $main-margin;
+	padding: $main-margin/4 $main-margin/4;
 	text-transform: uppercase;
 	text-align: center;
 	@include media-query(palm) { 
@@ -531,7 +531,7 @@
 }
 
 .reference__title { 
-	margin-bottom: $main-margin/2; 
+	margin-bottom: $main-margin/4; 
 	@include font-family('ubuntubold');	
 }
 

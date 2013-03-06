@@ -4762,7 +4762,7 @@ input, textarea {
 
 .btn {
   color: #fff;
-  padding: 10px 40px;
+  padding: 10px 10px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -5369,7 +5369,7 @@ input, textarea {
 }
 
 .reference__title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: "ubuntubold", sans-serif;
 }
 
