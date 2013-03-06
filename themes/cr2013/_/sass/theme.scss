@@ -28,3 +28,7 @@
 .page--contact{
     @include theme-colors($orange);
 }
+
+.page--error404{
+    @include theme-colors($cyan);
+}

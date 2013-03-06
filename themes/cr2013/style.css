@@ -4726,6 +4726,69 @@ input, textarea {
   background-color: #da6b55;
 }
 
+.page--error404 {
+  /* Styling Selected Text */
+  /* Styling Input Placeholder */
+}
+.page--error404 h1, .page--error404 h2, .page--error404 h3 {
+  color: #65aa9c;
+  ont-weight: normal;
+}
+.page--error404 a {
+  color: #65aa9c;
+}
+.page--error404 .theme-color {
+  color: #65aa9c;
+}
+.page--error404 .logo__circle {
+  width: 60px;
+  height: 60px;
+  background: #65aa9c;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+.page--error404 .main-header {
+  border-bottom: 5px solid #65aa9c;
+}
+.page--error404 .separator {
+  background: #65aa9c;
+}
+.page--error404 .separator .separator__content {
+  width: 36px;
+  height: 36px;
+  background: #65aa9c;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+}
+.page--error404 input, .page--error404 textarea {
+  background-color: #65aa9c;
+}
+.page--error404 ::selection {
+  background-color: #65aa9c;
+  color: #fff;
+}
+.page--error404 ::-moz-selection {
+  background-color: #65aa9c;
+  color: #fff;
+}
+.page--error404 ::-webkit-input-placeholder {
+  color: #fff;
+}
+.page--error404 :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+.page--error404 ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+.page--error404 :-ms-input-placeholder {
+  color: #fff;
+}
+.page--error404 .btn {
+  background-color: #65aa9c;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	*START* GENERAL
 /*-----------------------------------------------------------------------------------*/
