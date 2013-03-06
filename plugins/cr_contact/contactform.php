@@ -60,10 +60,11 @@ function wptuts_contact_form_sc($atts) {
 
 		if ($error == false) {
 			$email_message = $form_data['contact-message'] . "\n\nIP: " . wptuts_get_the_ip();
-			$headers  = "From: ".$form_data['contact-name']." <".$form_data['contact-email'].">\n";
+			$subject = "CR Contact Message";
+			$headers .= "From: ".$form_data['contact-name']." <".$form_data['contact-mail'].">\n";
 			$headers .= "Content-Type: text/plain; charset=UTF-8\n";
 			$headers .= "Content-Transfer-Encoding: 8bit\n";
-			wp_mail($email, $email_message, $headers);
+			wp_mail($email, $subject, $email_message, $headers);
 			$result = $success;
 			$sent = true;
 		}
