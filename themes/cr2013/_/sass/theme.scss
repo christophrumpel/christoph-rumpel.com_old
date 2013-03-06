@@ -29,6 +29,6 @@
     @include theme-colors($orange);
 }
 
-.page--error404{
+.error404{
     @include theme-colors($cyan);
 }
