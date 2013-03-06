@@ -31,7 +31,7 @@ Info: Showing overvire of references
 			<!-- Looping through references -->
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-
+				<div class="grid one-whole">
 				<?php 
 					// Checking reference year, output only one times
 					$reference_year = esc_html( get_post_meta( get_the_ID(), 'reference_year', true ));
@@ -45,6 +45,8 @@ Info: Showing overvire of references
 				<?php 
 					} 
 				?>
+			</div>
+			<div class="grid one-whole">
 
 				<article class="reference">
 					<div class="grid-wrapper">
@@ -68,6 +70,7 @@ Info: Showing overvire of references
 						</div>
 					</div>
 				</article>
+			</div>
 
 			<? endwhile; ?>
 		</div> <!-- END GRID WRAPPER -->

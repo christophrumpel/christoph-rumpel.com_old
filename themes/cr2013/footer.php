@@ -9,9 +9,10 @@
 				<div class="grid one-third palm-one-whole main-footer__right">
 					<nav>
 						<ul class="nav footer-nav">
-							<li class="footer-nav__twitter"><a href="https://twitter.com/christophrumpel">Twitter</a></li>
+							<li class="footer-nav__twitter"><a href="https://twitter.com/christophrumpel" target="_blank">Twitter</a></li>
 							<!-- <li class="footer-nav__github"><a href="#">Github</a></li> -->
-							<li class="footer-nav__codepen"><a href="http://codepen.io/christophrumpel">Codepen</a></li>
+							<li class="footer-nav__codepen"><a href="http://codepen.io/christophrumpel" target="_blank">Codepen</a></li>
+							<li class="footer-nav__treehouse"><a href="http://teamtreehouse.com/christophrumpel" target="_blank">Treehouse</a></li>
 							<!-- <li class="footer-nav__rss"><a href="#">RSS</a></li> -->
 						</ul>
 					</nav>
