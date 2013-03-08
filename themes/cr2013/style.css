@@ -5149,9 +5149,9 @@ input, textarea {
 }
 @media only screen and (max-width: 480px) {
   .header-group .header-group__name {
-    font-size: 48px;
-    font-size: 3rem;
-    line-height: 1.25;
+    font-size: 31px;
+    font-size: 1.9375rem;
+    line-height: 1.29032;
   }
 }
 .header-group .header-group__passion {
@@ -5169,9 +5169,9 @@ input, textarea {
 }
 @media only screen and (max-width: 480px) {
   .header-group .header-group__passion {
-    font-size: 30px;
-    font-size: 1.875rem;
-    line-height: 1.33333;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 1.90476;
     top: -9px;
     letter-spacing: -2px;
   }

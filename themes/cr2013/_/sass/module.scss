@@ -317,7 +317,7 @@
 				@include font-size(70px); 
 				top: -4px;
 			}
-			@include media-query(palm) { @include font-size(48px); }
+			@include media-query(palm) { @include font-size(31px); }
 		}
 		.header-group__passion {
 			position: relative;
@@ -327,7 +327,7 @@
 			
 			@include media-query(lap) { @include font-size(39px); }
 			@include media-query(palm) { 
-				@include font-size(30px); 
+				@include font-size(21px); 
 				top: -9px;
 				letter-spacing: -2px;
 			}
