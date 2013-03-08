@@ -302,7 +302,7 @@
 			height: 106px;
 		}
 		@include media-query(palm) {
-			height: 87px;
+			height: 64px;
 			text-align: center;
 		}
 		
@@ -356,6 +356,7 @@
 			@include media-query(palm) { 
 				line-height: 1;
 				margin-bottom: 10px;
+				@include font-size(21px);
 			}
 		}
 
@@ -364,6 +365,9 @@
 			top: -15px;
 			letter-spacing: 5px;
 			@include font-family('ubuntubold');
+			@include media-query(palm) {
+				@include font-size(31px);
+			}
 		}
 
 		.map {
@@ -377,6 +381,10 @@
 				margin: auto;
 				left:0;
 			}
+			@include media-query(palm) {
+				width: 253px;
+			}
+
 
 			.map__austria {
 
@@ -386,6 +394,10 @@
 				top: 0;
 				left: 242px;
 				@include vendor(animation, location 3s infinite);
+				@include media-query(palm) {
+					top: -10px;
+					left: 174px;
+				}
 			}
 			
 		}
@@ -404,6 +416,9 @@
 		 @include media-query(portable) {
 		 	text-align: center;
 		 }
+		 @include media-query(palm) {
+			@include font-size(35px);
+		}
 	}
 
 	.awesome-sign {
@@ -452,6 +467,11 @@
 		z-index: 15;
 		top: 89px;
 		left: -27px;
+		
+		@include media-query(palm) {
+			top: 60px;
+		}
+		
 	}
 		.awesome-sign__device {
 			position: relative
@@ -460,27 +480,35 @@
 		.awesome-sign__devices-phone {
 			left: 60px;
 			@include vendor(animation, swinging 3s infinite ease-in-out);
-			
 			@include vendor(transform-origin, top);
+			
+			@include media-query(palm) {
+				left: 38px;
+			}
 		}
 
 		.awesome-sign__devices-tablet {
 			left: 120px;
 			top: 10px;
 			@include vendor(animation, swinging 3s infinite ease-in-out);
-			
 			@include vendor(transform-origin, top);
-			
 			@include vendor(animation-delay, .5s);
+			
+			@include media-query(palm) {
+				left: 55px;
+				top: -10px;
+			}
 		}
 
 		.awesome-sign__devices-desktop {
 			left: 170px;
 			@include vendor(animation, swinging 3s infinite ease-in-out);
-			
 			@include vendor(transform-origin, top);
-			
 			@include vendor(animation-delay, .2s);
+			
+			@include media-query(palm) {
+				left: 70px;
+			}
 		}
 /*-----------------------------------------------------------------------------------*/
 /*	*END* HOME
