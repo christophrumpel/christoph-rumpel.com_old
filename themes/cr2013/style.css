@@ -5206,9 +5206,9 @@ input, textarea {
   .from-austria__from {
     line-height: 1;
     margin-bottom: 10px;
-    font-size: 21px;
-    font-size: 1.3125rem;
-    line-height: 1.90476;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.25;
   }
 }
 
@@ -5220,9 +5220,9 @@ input, textarea {
 }
 @media only screen and (max-width: 480px) {
   .from-austria__austria {
-    font-size: 31px;
-    font-size: 1.9375rem;
-    line-height: 1.29032;
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 1.2;
   }
 }
 

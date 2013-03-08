@@ -356,7 +356,7 @@
 			@include media-query(palm) { 
 				line-height: 1;
 				margin-bottom: 10px;
-				@include font-size(21px);
+				@include font-size(32px);
 			}
 		}
 
@@ -366,7 +366,7 @@
 			letter-spacing: 5px;
 			@include font-family('ubuntubold');
 			@include media-query(palm) {
-				@include font-size(31px);
+				@include font-size(50px);
 			}
 		}
 
