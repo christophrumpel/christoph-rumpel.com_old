@@ -521,7 +521,7 @@
 				top: -4px;
 			}
 			@include media-query(palm) {
-				left: 55px;
+				left: 45px;
 				top: 13px;
 			}
 		}
@@ -533,7 +533,7 @@
 			@include vendor(animation-delay, .2s);
 			
 			@include media-query(palm) {
-				left: 70px;
+				left: 60px;
 			}
 		}
 /*-----------------------------------------------------------------------------------*/

@@ -5434,7 +5434,7 @@ input, textarea {
 }
 @media only screen and (max-width: 480px) {
   .awesome-sign__devices-tablet {
-    left: 55px;
+    left: 45px;
     top: 13px;
   }
 }
@@ -5459,7 +5459,7 @@ input, textarea {
 }
 @media only screen and (max-width: 480px) {
   .awesome-sign__devices-desktop {
-    left: 70px;
+    left: 60px;
   }
 }
 
