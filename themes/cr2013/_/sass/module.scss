@@ -392,8 +392,8 @@
 			}
 			.map__location {
 				position: absolute;
-				top: 0;
-				left: 242px;
+				top: 10px;
+				left: 250px;
 				@include vendor(animation, location 3s infinite);
 				@include media-query(palm) {
 					top: -10px;
@@ -434,15 +434,27 @@
 		}
 		@include media-query(palm) {
 			margin-top: 20px;
-			left: 0;
+			left: 10px;
 		}
 	}
 
 	.awesome-sign__shadow {
 		position: absolute;
 		z-index: 10;
-		top: 15px;
+		top: 21px;
 		left: 0;
+		
+		@include media-query(lap) {
+			width: 360px;
+			height: 125px;
+			top: 10px;
+			left: 5px;
+		}
+		@include media-query(palm) {
+			width: 280px;
+			height: 97px;
+			top: 10px;
+		}
 	}
 
 	.awesome-sign__awesome {
@@ -450,6 +462,15 @@
 		z-index: 20;
 		top: 7px;
 		left: 0;
+		
+		@include media-query(lap) {
+			width: 360px;
+			height: 125px;
+		}
+		@include media-query(palm) {
+			width: 280px;
+			height: 97px;
+		}
 	}
 
 	.awesome-sign__arrow {
@@ -496,9 +517,12 @@
 			@include vendor(transform-origin, top);
 			@include vendor(animation-delay, .5s);
 			
+			@include media-query(lap) {
+				top: -4px;
+			}
 			@include media-query(palm) {
 				left: 55px;
-				top: 6px;
+				top: 13px;
 			}
 		}
 
@@ -580,6 +604,10 @@
 	letter-spacing: 1px;
 	line-height: 1;
 	margin-bottom: $main-margin/2;
+	@include media-query(palm){ 
+		 @include font-size(33px);
+		 text-align: center;
+	}
 }
 
 .contact-dropmealine {
@@ -614,6 +642,10 @@
 		width: 100%;
 		padding: $main-margin/4 0 $main-margin/4 $main-margin/2;
 		color: #fff;
+		
+		@include media-query(palm){ 
+		 	@include font-size(12px);
+		}
 	}
 
 	.contact-form__message {

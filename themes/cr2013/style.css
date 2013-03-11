@@ -5260,8 +5260,8 @@ input, textarea {
 }
 .map .map__location {
   position: absolute;
-  top: 0;
-  left: 242px;
+  top: 10px;
+  left: 250px;
   -webkit-animation: location 3s infinite;
   -moz-animation: location 3s infinite;
   -ms-animation: location 3s infinite;
@@ -5316,15 +5316,30 @@ input, textarea {
 @media only screen and (max-width: 480px) {
   .awesome-sign {
     margin-top: 20px;
-    left: 0;
+    left: 10px;
   }
 }
 
 .awesome-sign__shadow {
   position: absolute;
   z-index: 10;
-  top: 15px;
+  top: 21px;
   left: 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .awesome-sign__shadow {
+    width: 360px;
+    height: 125px;
+    top: 10px;
+    left: 5px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .awesome-sign__shadow {
+    width: 280px;
+    height: 97px;
+    top: 10px;
+  }
 }
 
 .awesome-sign__awesome {
@@ -5332,6 +5347,18 @@ input, textarea {
   z-index: 20;
   top: 7px;
   left: 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .awesome-sign__awesome {
+    width: 360px;
+    height: 125px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .awesome-sign__awesome {
+    width: 280px;
+    height: 97px;
+  }
 }
 
 .awesome-sign__arrow {
@@ -5400,10 +5427,15 @@ input, textarea {
   -o-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .awesome-sign__devices-tablet {
+    top: -4px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .awesome-sign__devices-tablet {
     left: 55px;
-    top: 6px;
+    top: 13px;
   }
 }
 
@@ -5515,6 +5547,14 @@ input, textarea {
   line-height: 1;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 480px) {
+  .contact-headline {
+    font-size: 33px;
+    font-size: 2.0625rem;
+    line-height: 1.21212;
+    text-align: center;
+  }
+}
 
 .contact-dropmealine {
   margin-bottom: 20px;
@@ -5554,6 +5594,15 @@ input, textarea {
   width: 100%;
   padding: 10px 0 10px 20px;
   color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  .contact-form__name,
+  .contact-form__mail,
+  .contact-form__message {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.66667;
+  }
 }
 
 .contact-form__message {
