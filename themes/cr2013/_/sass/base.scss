@@ -179,6 +179,8 @@ html {
 
 a:hover { text-decoration: none; }
 
+.btn:hover, p a:hover { text-decoration: underline; }
+
 input, textarea { border: 0; }
 
 .font-bold { @include font-family('ubuntubold'); }

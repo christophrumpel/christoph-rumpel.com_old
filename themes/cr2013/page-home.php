@@ -20,7 +20,7 @@ Template Name: Home
 									<h1 class="header-group__name">I'm Christoph</h1>
 									<h2 class="header-group__passion">A Passionate Web Developer</h2>
 								</hgroup>
-								<div class="info info--job animated delay-one fadeInDown">and i am currently avialable for new projects</div>
+								<div class="info info--job animated delay-one fadeInDown">and i am currently available for new projects</div>
 							</div>
 						</div>
 					</div>

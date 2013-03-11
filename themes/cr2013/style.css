@@ -4442,6 +4442,10 @@ a:hover {
   text-decoration: none;
 }
 
+.btn:hover, p a:hover {
+  text-decoration: underline;
+}
+
 input, textarea {
   border: 0;
 }
@@ -4536,6 +4540,11 @@ input, textarea {
 .home .btn {
   background-color: #65aa9c;
 }
+@media only screen and (max-width: 480px) {
+  .home .main-nav .main-nav__item:hover {
+    background-color: #65aa9c;
+  }
+}
 
 .page--portfolio {
   /* Styling Selected Text */
@@ -4598,6 +4607,11 @@ input, textarea {
 }
 .page--portfolio .btn {
   background-color: #6697c0;
+}
+@media only screen and (max-width: 480px) {
+  .page--portfolio .main-nav .main-nav__item:hover {
+    background-color: #6697c0;
+  }
 }
 
 .page--blog {
@@ -4662,6 +4676,11 @@ input, textarea {
 .page--blog .btn {
   background-color: #d35a9d;
 }
+@media only screen and (max-width: 480px) {
+  .page--blog .main-nav .main-nav__item:hover {
+    background-color: #d35a9d;
+  }
+}
 
 .page--contact {
   /* Styling Selected Text */
@@ -4725,6 +4744,11 @@ input, textarea {
 .page--contact .btn {
   background-color: #da6b55;
 }
+@media only screen and (max-width: 480px) {
+  .page--contact .main-nav .main-nav__item:hover {
+    background-color: #da6b55;
+  }
+}
 
 .error404 {
   /* Styling Selected Text */
@@ -4787,6 +4811,11 @@ input, textarea {
 }
 .error404 .btn {
   background-color: #65aa9c;
+}
+@media only screen and (max-width: 480px) {
+  .error404 .main-nav .main-nav__item:hover {
+    background-color: #65aa9c;
+  }
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -4886,7 +4915,7 @@ input, textarea {
 .main-header {
   position: relative;
   z-index: 10;
-  height: 85px;
+  height: 90px;
   /* 85 due to border 5px */
   background-color: #323232;
   -webkit-transition: height 350ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -4899,23 +4928,6 @@ input, textarea {
   .main-header {
     height: 100%;
     padding-top: 20px;
-  }
-}
-
-.main-header:hover {
-  height: 110px;
-}
-@media only screen and (max-width: 480px) {
-  .main-header:hover {
-    height: auto;
-  }
-}
-.main-header:hover .main-nav {
-  line-height: 110px;
-}
-@media only screen and (max-width: 480px) {
-  .main-header:hover .main-nav {
-    line-height: 1;
   }
 }
 
@@ -4944,7 +4956,7 @@ input, textarea {
 
 .main-nav {
   float: right;
-  line-height: 80px;
+  line-height: 90px;
   -webkit-transition: line-height 350ms cubic-bezier(0.86, 0, 0.07, 1);
   -moz-transition: line-height 350ms cubic-bezier(0.86, 0, 0.07, 1);
   -ms-transition: line-height 350ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -5044,6 +5056,9 @@ input, textarea {
   padding: 20px 0;
   background-color: #323232;
   color: #ececec;
+}
+.main-footer a:hover {
+  text-decoration: underline;
 }
 .main-footer .main-footer__left {
   text-align: center;

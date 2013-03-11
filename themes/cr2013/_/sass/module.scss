@@ -101,7 +101,7 @@
 .main-header {
 	position: relative;
 	z-index: 10;
-	height: 85px; /* 85 due to border 5px */
+	height: 90px; /* 85 due to border 5px */
 	background-color: $darkgrey;
 	
 	@include vendor(transition, height 350ms cubic-bezier(0.86, 0, 0.07, 1));
@@ -111,17 +111,17 @@
 		}
 }
 
-.main-header {
-	&:hover { 
-		height: 110px;
-		@include media-query(palm) { height: auto; }
-		.main-nav { 
-			line-height: 110px;
-			@include media-query(palm) { line-height: 1; }
-		}
-	} 
+// .main-header {
+// 	&:hover { 
+// 		height: 110px;
+// 		@include media-query(palm) { height: auto; }
+// 		.main-nav { 
+// 			line-height: 110px;
+// 			@include media-query(palm) { line-height: 1; }
+// 		}
+// 	} 
 	
-}
+// }
 
 	.logo {
 		position: absolute;
@@ -148,7 +148,7 @@
 
 	.main-nav {
 		float: right;
-		line-height: 80px;
+		line-height: 90px;
 		
 		@include media-query(palm) { 
 			float: none;
@@ -235,6 +235,8 @@
 	padding: 20px 0;
 	background-color: $darkgrey;
 	color: $grey;
+	
+	a:hover { text-decoration: underline; }
 	
 	.main-footer__left { 
 		text-align: center; 

@@ -117,4 +117,8 @@
 	   color: #fff; 
 	}
 	.btn {  background-color: $color; }
+
+	@include media-query(palm) {
+		.main-nav .main-nav__item:hover { background-color: $color; }
+	}
 }
