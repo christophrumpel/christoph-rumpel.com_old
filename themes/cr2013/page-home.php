@@ -63,7 +63,7 @@ Template Name: Home
 					<div class="grid four-fifths portable-one-whole">
 						<h2 class="header-iwanttheweb">I want to make the web<br />look & feel</h2>
 						<div class="awesome-sign">
-							<img class="awesome-sign__shadow" width="432" height="143" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome_shadow.png" alt="Shadow Of Awesome Sign">
+							<img class="awesome-sign__shadow" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome_shadow.png" alt="Shadow Of Awesome Sign">
 							<img class="awesome-sign__awesome" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome.png" alt="Icon Of Awesome Sign">
 							<img class="awesome-sign__arrow" width="115" height="163"src="<?php bloginfo('template_directory'); ?>/_/img/icon_arrow.png" alt="Icon Of An Arrow">
 							<div class="awesome-sign__devices">
