@@ -471,7 +471,8 @@
 		left: -27px;
 		
 		@include media-query(palm) {
-			top: 60px;
+			top: 45px;
+			left: -40px;
 		}
 		
 	}
@@ -498,7 +499,7 @@
 			
 			@include media-query(palm) {
 				left: 55px;
-				top: -10px;
+				top: 6px;
 			}
 		}
 
