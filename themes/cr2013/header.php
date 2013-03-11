@@ -20,22 +20,10 @@
 
 	<title>
 		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
+		    if (is_front_page() ) {
+		        echo '» home - '; bloginfo('name'); }
+		    else {
+		        wp_title(); echo ' - '; bloginfo('name'); }
 		   ?>
 	</title>
 	
@@ -106,30 +94,10 @@
 				<div class="logo fadeInDown">
 					<a href="<?php echo get_option('home'); ?>">
 						<div class="logo__circle">
-							<img src="<?php bloginfo('template_directory'); ?>/_/img/cr_logo.png" class="logo__img" alt="Christoph Rumpel Logo">
+							<img src="<?php bloginfo('template_directory'); ?>/_/img/cr_logo.png" class="logo__img" width="43" height="32" alt="Christoph Rumpel Logo">
 						</div>
 					</a>
 				</div>
-<!-- 				<nav>
-					<ul class="nav main-nav">
-						<li class="main-nav__item main-nav__home">
-							<div class="arrow"></div>
-							<a href="index.html">Home</a>
-						</li>
-						<li class="main-nav__item main-nav__port">
-							<div class="arrow"></div>
-							<a href="references.html">Portfolio</a>
-						</li>
-						<li class="main-nav__item main-nav__blog">
-							<div class="arrow"></div>
-							<a href="blog.html">Blog</a>
-						</li>
-						<li class="main-nav__item main-nav__contact">
-							<div class="arrow"></div>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</nav> -->
 
 				<?php if (function_exists(clean_custom_menus())) clean_custom_menus(); ?>
 

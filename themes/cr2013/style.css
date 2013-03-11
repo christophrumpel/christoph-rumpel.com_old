@@ -4899,7 +4899,7 @@ input, textarea {
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .info--job {
     position: relative;
-    width: 525px;
+    width: 403px;
     margin: auto;
     top: 28px;
     text-align: center;
@@ -5156,9 +5156,9 @@ input, textarea {
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .header-group .header-group__name {
-    font-size: 70px;
-    font-size: 4.375rem;
-    line-height: 1.14286;
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 1.07143;
     top: -4px;
   }
 }
@@ -5172,14 +5172,13 @@ input, textarea {
 .header-group .header-group__passion {
   position: relative;
   top: -15px;
-  left: 3px;
   letter-spacing: 0px;
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .header-group .header-group__passion {
-    font-size: 39px;
-    font-size: 2.4375rem;
-    line-height: 1.02564;
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 1.33333;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -5308,7 +5307,7 @@ input, textarea {
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .awesome-sign {
-    width: 530px;
+    width: 430px;
     margin: auto;
     left: 5%;
     top: 20px;
@@ -5340,7 +5339,7 @@ input, textarea {
   top: 50px;
   left: 414px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   .awesome-sign__arrow {
     display: none;
   }

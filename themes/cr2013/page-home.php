@@ -65,7 +65,7 @@ Template Name: Home
 						<div class="awesome-sign">
 							<img class="awesome-sign__shadow" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome_shadow.png" alt="Shadow Of Awesome Sign">
 							<img class="awesome-sign__awesome" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome.png" alt="Icon Of Awesome Sign">
-							<img class="awesome-sign__arrow hide--palm" src="<?php bloginfo('template_directory'); ?>/_/img/icon_arrow.png" alt="Icon Of An Arrow">
+							<img class="awesome-sign__arrow" src="<?php bloginfo('template_directory'); ?>/_/img/icon_arrow.png" alt="Icon Of An Arrow">
 							<div class="awesome-sign__devices">
 								<img class="awesome-sign__device awesome-sign__devices-phone" src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_phone.png" alt="Image of A Phone">
 								<img class="awesome-sign__device awesome-sign__devices-tablet" src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_tablet.png" alt="Image of A Phone">
