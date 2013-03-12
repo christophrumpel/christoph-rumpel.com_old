@@ -71,7 +71,7 @@
                     $menu_list .= "\t\t\t\t\t". '<li class="main-nav__item main-nav__'.$title.'"><div class="arrow"></div><a href="'. $url .'">'. $title .'</a></li>' ."\n";
                 }
                 $menu_list .= "\t\t\t\t". '</ul>' ."\n";
-                $menu_list .= "\t\t\t". '</nav>' ."\n";
+                $menu_list .= "\t\t\t". '<a href="#" class="nav__pull">Menu</a></nav>' ."\n";
 
             } else {
                 // $menu_list = '<!-- no list defined -->';

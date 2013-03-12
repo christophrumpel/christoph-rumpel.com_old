@@ -1,23 +1,17 @@
-// remap jQuery to $
-(function($){})(window.jQuery);
 
+document.onreadystatechange = function() {
+    if (document.readyState === 'complete') {
+        // DOM is ready!
+        var pull        = document.querySelector('.nav__pull'),
+		    nav        = document.querySelector('.main-nav');   
 
-/* trigger when page is ready */
-$(document).ready(function (){
-
-	// your functions go here
-
-});
-
-
-/* optional triggers
-
-$(window).load(function() {
-	
-});
-
-$(window).resize(function() {
-	
-});
-
-*/
+		pull.addEventListener( 'click', function( ev ) {  
+		    ev.preventDefault(); 
+		    console.log(nav.style.display);
+		    if (nav.style.display == '')
+		   		nav.style.display = 'block';
+		   	else
+		   		nav.style.display = '';
+		}, false);
+    }
+};

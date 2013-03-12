@@ -17,6 +17,10 @@
 	.content-wrapper {
 		min-height: 30em;
 		padding: 2*$main-margin $main-margin;
+		
+		@include media-query(palm) {
+			padding: $main-margin $main-margin;
+		}
 	}
 
 	nav { overflow: hidden; }
