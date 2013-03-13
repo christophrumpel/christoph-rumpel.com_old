@@ -107,7 +107,7 @@ function wptuts_contact_form_sc($atts) {
 				<h2 class="contact-headline">If you would like to<span class="font-bold"> hire me</span> or just want to get in touch</h2>
 			</div>
 			<div class="grid three-fifths palm-one-whole">
-				<img src="<?php bloginfo('template_directory'); ?>/_/img/icon_dropmealine.png" class="contact-dropmealine" alt="Drop Me A Line"><br />
+				<img src="<?php bloginfo('template_directory'); ?>/_/img/icon_dropmealine_2x.png" width="398" height="200" class="contact-dropmealine" alt="Drop Me A Line"><br />
 			</div>
 			<div class="grid one-third lap-two-fifths hide--palm">
 				<div class="contact-christoph-wrapper">
