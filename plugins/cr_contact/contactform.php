@@ -31,7 +31,7 @@ function wptuts_contact_form_sc($atts) {
 		"label_submit" => 'Send',
 		"error_empty" => 'Oh, did you forget to fill all the <span class="theme-color">fields?</span>.',
 		"error_noemail" => 'Oh, seems like something went wrong. Please check your <span class="font-bold">email address</span>.',
-		"success" => '<h2>Thanks for your e-mail!</h2><h4>Your lines are already dropping in my direction</h4><div class="contact-lines"></div>'
+		"success" => '<h2 class="contact__thx">Thank you!</h2><h4 class="contact__linesdrop">Your lines are already dropping in my direction</h4><div class="contact-lines"></div>'
 	), $atts));
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {

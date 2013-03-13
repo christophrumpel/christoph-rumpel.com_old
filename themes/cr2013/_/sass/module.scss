@@ -614,9 +614,9 @@
 	line-height: 1;
 	margin-bottom: $main-margin/2;
 	@include media-query(palm){ 
-		 @include font-size(33px);
-		 text-align: center;
-		 margin-top: 25px;
+		@include font-size(33px);
+		text-align: center;
+		margin-top: 25px;
 	}
 }
 
@@ -630,11 +630,36 @@
 	text-align: center;
 }
 
+.contact__thx {
+	@include media-query(palm){
+		line-height: 1em;
+		text-align: center;
+		margin-bottom: $main-margin/2;
+		@include font-size(33px);
+	}
+}
+
+.contact__linesdrop {
+	@include media-query(palm){
+		line-height: 1em;
+		margin-bottom: $main-margin/2;
+		text-align: center;
+		@include font-size(20px);
+	}
+}
+
 .contact-lines {
 	background-image: url('_/img/lines.png');
+	background-repeat: no-repeat;
 	width: 306px;
 	height: 83px;
 	@include vendor(animation, fall 5s);
+	
+	@include media-query(palm){
+		width: 100%;
+		background-position: center center;
+		 
+	}
 }
 
 	.contact-christoph {

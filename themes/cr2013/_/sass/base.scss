@@ -103,8 +103,23 @@
 /* Lines Fall */
 
 @-webkit-keyframes fall {
-0% { opacity: 1; -webkit-transform: scale(1.0); }
-100% { opacity: 0; -webkit-transform: scale(0.5); }
+    0% { opacity: 1; -webkit-transform: scale(1.0); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+@-moz-keyframes fall {
+    0% { opacity: 1; -webkit-transform: scale(1.0); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+@-o-keyframes fall {
+    0% { opacity: 1; -webkit-transform: scale(1.0); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+@keyframes fall {
+    0% { opacity: 1; -webkit-transform: scale(1.0); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
 }
 
 
