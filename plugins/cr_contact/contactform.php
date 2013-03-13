@@ -59,7 +59,7 @@ function wptuts_contact_form_sc($atts) {
 		}
 
 		if ($error == false) {
-			$email_message = $form_data['contact-message'] . "\n\nIP: " . wptuts_get_the_ip();
+			$email_message = $form_data['contact-name'.": ".$form_data['contact-message'] . "\n\nIP: " . wptuts_get_the_ip();
 			$subject = "CR Contact Message";
 			$headers .= "From: ".$form_data['contact-name']." <".$form_data['contact-mail'].">\n";
 			$headers .= "Content-Type: text/plain; charset=UTF-8\n";
