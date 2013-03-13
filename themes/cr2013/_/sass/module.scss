@@ -76,6 +76,7 @@
 	@include media-query(palm) {  
 		right: 0;
 		width: 100%; 
+		left:0;
 	}
 }
 
@@ -615,6 +616,7 @@
 	@include media-query(palm){ 
 		 @include font-size(33px);
 		 text-align: center;
+		 margin-top: 25px;
 	}
 }
 
