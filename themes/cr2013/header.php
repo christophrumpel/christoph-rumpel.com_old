@@ -58,7 +58,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.christoph-rumpel.com">
 	<meta property="og:title" content="<?php bloginfo('description'); ?>">
-	<meta property="og:description" content="<?php bloginfo('description'); ?>">
+	<meta property="og:description" content="Hi, i am Christoph, a passionate web developer from beautiful Austria. I want to make the web look and fell awesome on all devices.">
 	<link rel="canonical" href="http://www.christoph-rumpel.com">
 
 
