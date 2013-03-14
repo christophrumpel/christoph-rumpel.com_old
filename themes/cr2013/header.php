@@ -53,11 +53,11 @@
 	<meta name="author" content="Christoph Rumpel">
 	<meta name="Copyright" content="Copyright Christoph Rumpel 2013. All Rights Reserved.">
 	
-	<!--  Mobile Viewport meta tag
-	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-	device-width : Occupy full width of the screen in its current orientation
-	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
+	<!-- FB Meta -->
+	<meta property="og:image" content="http://christoph-rumpel.com/wp-content/themes/cr2013/screenshot.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.christoph-rumpel.com/">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 	
 	
