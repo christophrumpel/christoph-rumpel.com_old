@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme">
+<head data-template-set="html5-reset-wordpress-theme">
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	
@@ -62,7 +62,7 @@
 	<link rel="canonical" href="http://www.christoph-rumpel.com">
 
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">

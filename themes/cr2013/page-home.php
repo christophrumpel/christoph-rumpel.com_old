@@ -65,10 +65,10 @@ Template Name: Home
 						<div class="awesome-sign">
 							<img class="awesome-sign__shadow" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome_shadow.png" alt="Shadow Of Awesome Sign">
 							<img class="awesome-sign__awesome" src="<?php bloginfo('template_directory'); ?>/_/img/icon_awesome.png" alt="Icon Of Awesome Sign">
-							<img class="awesome-sign__arrow" width="115" height="163"src="<?php bloginfo('template_directory'); ?>/_/img/icon_arrow.png" alt="Icon Of An Arrow">
+							<img class="awesome-sign__arrow" width="115" height="163" src="<?php bloginfo('template_directory'); ?>/_/img/icon_arrow.png" alt="Icon Of An Arrow">
 							<div class="awesome-sign__devices">
-								<img class="awesome-sign__device awesome-sign__devices-phone" width="56" height="157"src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_phone.png" alt="Image of A Phone">
-								<img class="awesome-sign__device awesome-sign__devices-tablet" width="66" height="168"src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_tablet.png" alt="Image of A Phone">
+								<img class="awesome-sign__device awesome-sign__devices-phone" width="56" height="157" src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_phone.png" alt="Image of A Phone">
+								<img class="awesome-sign__device awesome-sign__devices-tablet" width="66" height="168" src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_tablet.png" alt="Image of A Phone">
 								<img class="awesome-sign__device awesome-sign__devices-desktop" width="123" height="188" src="<?php bloginfo('template_directory'); ?>/_/img/icon_device_desktop.png" alt="Image of A Phone">
 							</div>
 						</div>
