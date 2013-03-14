@@ -56,9 +56,10 @@
 	<!-- FB Meta -->
 	<meta property="og:image" content="http://christoph-rumpel.com/wp-content/themes/cr2013/screenshot.png">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.christoph-rumpel.com/">
+	<meta property="og:url" content="http://www.christoph-rumpel.com">
 	<meta property="og:title" content="<?php bloginfo('description'); ?>">
 	<meta property="og:description" content="<?php bloginfo('description'); ?>">
+	<link rel="canonical" href="http://www.christoph-rumpel.com">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
