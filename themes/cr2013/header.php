@@ -54,7 +54,7 @@
 	<meta name="Copyright" content="Copyright Christoph Rumpel 2013. All Rights Reserved.">
 	
 	<!-- FB Meta -->
-	<meta property="og:image" content="http://christoph-rumpel.com/wp-content/themes/cr2013/screenshot1.png">
+	<meta property="og:image" content="http://christoph-rumpel.com/wp-content/themes/cr2013/screenshot.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.christoph-rumpel.com">
 	<meta property="og:title" content="<?php bloginfo('description'); ?>">
