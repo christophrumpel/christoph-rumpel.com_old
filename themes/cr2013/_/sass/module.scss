@@ -435,6 +435,7 @@
 		position: relative;
 		height: 295px;
 		left: 150px;
+		max-width: 530px;
 		@include media-query(lap) {
 			width: 430px;
 			margin: auto;
