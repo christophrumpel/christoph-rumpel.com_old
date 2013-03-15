@@ -100,8 +100,6 @@
 }
 
 .main-header {
-	position: relative;
-	z-index: 10;
 	height: 90px;
 	background-color: $darkgrey;
 	
@@ -125,12 +123,8 @@
 // }
 
 	.logo {
-		position: absolute;
-		top: 50%;
-		left: $main-margin;
-		margin-top: -32px; /* half of its size +2px from 5px border*/
-		line-height: 100%;
-		// @include vendor(animation, fadein ease-in 1s);
+		float: left;
+		margin-top: 13px;
 		
 		@include media-query(palm) { 
 			position: relative;
@@ -162,7 +156,7 @@
 		
 		.main-nav__item {
 			position: relative;
-			margin-left: 1.25em;
+			margin-left: 20px;
 			padding-left: 20px;
 			background: url('_/img/menu_seperator.png') no-repeat;
 			background-position: left center;

@@ -57,7 +57,9 @@ Info: Showing overvire of references
 										$domsxe = simplexml_load_string(get_the_post_thumbnail());
 										$thumbnailsrc = $domsxe->attributes()->src;
 									?>			
-								<img class="reference__image" src="<?php echo $thumbnailsrc; ?>" alt="Reference Image">
+								<a target="_blank" href="<?php echo esc_html( get_post_meta( get_the_ID(), 'reference_url', true ) ); ?>">
+									<img class="reference__image" src="<?php echo $thumbnailsrc; ?>" alt="Reference Image">
+								</a>
 							</div>
 						</div>
 						<div class="grid two-fifths lap-one-half palm-one-whole">
