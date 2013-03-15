@@ -678,6 +678,15 @@
 		}
 	}
 
+	/* contact labels */
+	.contact-form__name-label,
+	.contact-form__mail-label { 
+		position: absolute;
+		top: 0;
+		padding: 9px 0 9px 20px;
+		color: #fff;
+	}
+
 	.contact-form__message {
 		margin: $main-margin/2 0;
 		height: $main-margin*4;

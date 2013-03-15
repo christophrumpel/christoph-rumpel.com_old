@@ -79,14 +79,16 @@ function wptuts_contact_form_sc($atts) {
 		<?php
 		$email_form = '<form class="contact-form" method="post" action="'.get_permalink().'">
 			<div class="contact-form">
-				<div class="grid one-half">
-					<input class="contact-form__name" name="contact-name" type="text" placeholder="'.$label_name.'" />
+				<div class="grid one-half posrel">
+					<input id="contact-form__name" class="contact-form__name" name="contact-name" type="text" />
+					<label class="contact-form__name-label" for="contact-form__name">'.$label_name.'</label>
 				</div>
-				<div class="grid one-half">
-					<input class="contact-form__mail" name="contact-mail" type="text" placeholder="'.$label_email.'" />
+				<div class="grid one-half posrel">
+					<input id="contact-form__mail" class="contact-form__mail" name="contact-mail" type="email" />
+					<label class="contact-form__mail-label" for="contact-form__mail">'.$label_email.'</label>
 				</div>
 				<div class="grid one-whole">
-					<textarea class="contact-form__message" name="contact-message" placeholder="'.$label_message.'"></textarea>
+					<textarea class="contact-form__message" name="contact-message">'.$label_message.'</textarea>
 					<input type="submit" value="'.$label_submit.'" name="contact-send" class="btn btn-send">
 				</div>
 			</div>
