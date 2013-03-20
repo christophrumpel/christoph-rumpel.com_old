@@ -73,7 +73,12 @@
 	:-ms-input-placeholder {  
 	   color: #fff; 
 	}
-	.btn {  background-color: $color; }
+	.btn {  
+		@include vendor(transition, background-color 0.5s);
+		background-color: $color; 
+	}
+
+	.btn:hover, .btn:active { background-color: darken( $color, 10%); }
 
 	@include media-query(palm) {
 		.main-nav .main-nav__item:hover { background-color: $color; }
