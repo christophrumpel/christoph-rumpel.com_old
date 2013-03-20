@@ -26,12 +26,19 @@
 
 @mixin theme-colors($color){
 
+	$color-dark: darken( $color, 10%);
+
 	h1, h2, h3 { 
 		color: $color; 
 		font-weight: normal; 
 	}
 
-	a { color: $color }
+	a { 
+		color: $color;
+		@include vendor(transition, color 0.5s); 
+	}
+	
+	p a:hover { color: darken($color, 10% ); }
 	
 	.theme-color { color: $color; }
 	
@@ -73,12 +80,13 @@
 	:-ms-input-placeholder {  
 	   color: #fff; 
 	}
+
 	.btn {  
 		@include vendor(transition, background-color 0.5s);
 		background-color: $color; 
 	}
 
-	.btn:hover, .btn:active { background-color: darken( $color, 10%); }
+	.btn:hover, .btn:active { background-color: $color-dark; }
 
 	@include media-query(palm) {
 		.main-nav .main-nav__item:hover { background-color: $color; }

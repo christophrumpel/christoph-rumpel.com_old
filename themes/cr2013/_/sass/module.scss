@@ -578,8 +578,10 @@
 	position: relative;
 	border: 15px solid $blue;
 	outline: 5px solid #fff;
+	@include vendor(transition, border-color 0.5s);
 	
 	&:hover {
+		border: 15px solid darken($blue, 10%);
 	}
 }
 
