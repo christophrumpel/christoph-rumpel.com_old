@@ -41,7 +41,7 @@ Info: Showing overvire of references
 
 						$counters[$reference_year] = 1;
 				?>
-						<img src="<?php bloginfo("template_directory"); ?>/_/img/icon_<?php echo $reference_year; ?>.png" width="141" height="54" class="reference-year" alt="Reference Year">
+						<!-- <img src="<?php bloginfo("template_directory"); ?>/_/img/icon_<?php echo $reference_year; ?>.png" width="141" height="54" class="reference-year" alt="Reference Year"> -->
 				<?php 
 					} 
 				?>
