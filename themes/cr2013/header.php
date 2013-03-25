@@ -61,6 +61,12 @@
 	<meta property="og:description" content="Hi! I am Christoph, a passionate web developer from beautiful Austria. I want to make the web look and feel AWESOME on all devices.">
 	<link rel="canonical" href="http://www.christoph-rumpel.com">
 
+	<!-- Ressouce and DNS Prefetching -->
+	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-b-webfont.woff">
+	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-m-webfont.woff">
+	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-l-webfont.woff">
+	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-li-webfont.woff">
+
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
