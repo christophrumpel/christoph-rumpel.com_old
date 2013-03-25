@@ -26,46 +26,47 @@ document.onreadystatechange = function() {
 
 			var contactMessage = document.querySelector('.contact-form__message');
 
-			/* On focus hide label */
-			contactName.addEventListener( 'focus', function( ev ) {
+			if(contactName) {
+				/* On focus hide label */
+				contactName.addEventListener( 'focus', function( ev ) {
 
-				contactNameLabel.style.top = '-9999px';
+					contactNameLabel.style.top = '-9999px';
 
-			}, false);
+				}, false);
 
-			contactMail.addEventListener( 'focus', function( ev ) {
+				contactMail.addEventListener( 'focus', function( ev ) {
 
-				contactMailLabel.style.top = '-9999px';
-				
-			}, false);
+					contactMailLabel.style.top = '-9999px';
+					
+				}, false);
 
-			contactMessage.addEventListener( 'focus', function ( ev ) {
-				contactMessage.innerHTML = "";
-			}, false);
+				contactMessage.addEventListener( 'focus', function ( ev ) {
+					contactMessage.innerHTML = "";
+				}, false);
 
 
-			/*On blur, focus leaving, return label */
-			contactName.addEventListener( 'blur', function( ev ) {
+				/*On blur, focus leaving, return label */
+				contactName.addEventListener( 'blur', function( ev ) {
 
-				if(contactName.value == "")
-					contactNameLabel.style.top = '0px';
+					if(contactName.value == "")
+						contactNameLabel.style.top = '0px';
 
-			}, false);
+				}, false);
 
-			contactMail.addEventListener( 'blur', function( ev ) {
+				contactMail.addEventListener( 'blur', function( ev ) {
 
-				if(contactMail.value == "")
-					contactMailLabel.style.top = '0px';
+					if(contactMail.value == "")
+						contactMailLabel.style.top = '0px';
 
-			}, false);
+				}, false);
 
-			contactMessage.addEventListener( 'blur', function( ev ) {
+				contactMessage.addEventListener( 'blur', function( ev ) {
 
-				if(contactMessage.value == "") 
-					contactMessage.innerHTML = "What can i do for you?";
+					if(contactMessage.value == "") 
+						contactMessage.innerHTML = "What can i do for you?";
 
-			}, false);
-
+				}, false);
+			}
     }
 
 };
