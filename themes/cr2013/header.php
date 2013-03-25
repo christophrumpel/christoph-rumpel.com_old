@@ -66,6 +66,7 @@
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-m-webfont.woff">
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-l-webfont.woff">
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-li-webfont.woff">
+	<link rel="dns-prefetch" href="//www.google-analytics.com">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
