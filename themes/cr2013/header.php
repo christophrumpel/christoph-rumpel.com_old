@@ -66,6 +66,7 @@
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-m-webfont.woff">
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-l-webfont.woff">
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-li-webfont.woff">
+	<link rel="prefetch" href="http://christoph-rumpel.com/wp-content/themes/cr2013/_/img/icon_map.png">
 	<link rel="prerender" href="http://christoph-rumpel.com/wp-content/themes/cr2013/_/img/icon_map.png">
 
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
