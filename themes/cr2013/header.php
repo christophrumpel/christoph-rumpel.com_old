@@ -66,6 +66,8 @@
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-m-webfont.woff">
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-l-webfont.woff">
 	<link rel="prefetch" href="<?php bloginfo('template_directory'); ?>/_/fonts/ubuntu-li-webfont.woff">
+	<link rel="prerender" href="http://christoph-rumpel.com/wp-content/themes/cr2013/_/img/icon_map.png">
+
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
 
 
@@ -87,8 +89,8 @@
 	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
-	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
-	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
+	<!-- all our JS is at the bottom of the page, except for Modernizr. 
+	 <script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script> -->
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
