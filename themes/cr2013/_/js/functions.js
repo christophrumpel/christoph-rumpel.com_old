@@ -16,6 +16,7 @@ document.onreadystatechange = function() {
 		   		nav.style.display = '';
 		}, false);
 
+
 		/* Contact Label Removing */
 			/* Setting Vars */
 			var contactName = document.querySelector('.contact-form__name');

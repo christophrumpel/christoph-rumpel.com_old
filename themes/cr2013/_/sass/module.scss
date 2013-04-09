@@ -43,6 +43,19 @@
 		top: -2px;
 		color: #fff;
 	}
+
+	&.seperator--blog { 
+		margin-bottom: $main-margin;
+		margin-top: $main-margin;
+		span {
+			color: #fff;
+			@include font-size(55px);
+			@include font-family('ubuntulight_italic');
+			position: relative;
+			right: 8px;
+			top: -2px;
+		}
+	}
 }
 
 .btn { 
@@ -603,6 +616,133 @@
 /*	*END* portfolio
 /*-----------------------------------------------------------------------------------*/
 
+
+/*-----------------------------------------------------------------------------------*/
+/*	*START* Blog Overview
+/*-----------------------------------------------------------------------------------*/
+
+.articles {
+	margin-left: 0;
+}
+
+.blog-intro {
+	@include font-family('ubuntulight_italic');
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	@include font-size(20px);
+	line-height: 1.3em;
+}
+
+.articles__item {
+	list-style: none;
+	padding: $main-margin/4 0;
+}
+
+	.articles__date {
+		position: relative;
+		top: 10px;
+
+		@include media-query(palm){
+			@include font-size(18px);
+			top: 0;
+		}		
+	}
+
+	.articles__title {
+		@include font-family('ubuntubold');
+
+		@include media-query(palm){
+			@include font-size(24px);
+		}		
+	}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	*END* Blog
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	*START*  Blog Detail
+/*-----------------------------------------------------------------------------------*/
+.article {
+	
+	ul {
+		margin-top: $main-margin/4;
+		margin-bottom: $main-margin/2;
+	}
+
+	p {
+		margin: $main-margin/4 0;
+	}
+
+	blockquote p {
+		margin: 0;
+	}
+}
+
+
+
+	.article__title {
+
+		@include media-query(palm){
+		}
+
+	}
+
+	.article__subheadline {
+		@include font-size(28px);
+		margin: $main-margin/2 0 $main-margin/4 0;
+	}
+	
+	.article__date {
+		margin-bottom: $main-margin/2;
+	}
+
+	.toc {
+		margin: $main-margin/4 0 0 $main-margin/2;
+	}
+		.toc__title {
+			margin-bottom: $main-margin/4;
+		}
+		.toc__list {
+			margin-left: 23px;
+		}
+
+		.toc__list-chapter {
+			margin-left: 0;
+		}
+
+	.article__intro {
+		@include font-family('ubuntumedium');
+		margin-bottom: $main-margin/2;
+		padding: $main-margin/2 0px;
+	}
+
+	.ul__headline {
+		@include font-family('ubuntubold');
+		margin-top: $main-margin/4;
+	}
+	
+	/* Wrapper of post images with caption*/
+	.wp-caption {
+		float: left;
+		margin-bottom: $main-margin/2;
+		text-align: center;
+	}
+		.wp-caption-text{
+			@include font-family('ubuntulight_italic');
+			@include font-size(14px);
+		}
+	#disqus_thread {
+		margin-top: $main-margin/2;
+	}
+
+/*-----------------------------------------------------------------------------------*/
+/*	*END* Blog Detail
+/*-----------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------*/
 /*	*START* CONTACT

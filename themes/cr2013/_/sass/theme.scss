@@ -21,7 +21,7 @@
     @include theme-colors($blue);
 }
 
-.page--blog{
+.page--blog, .single-post{
     @include theme-colors($pink);
 }
 

@@ -212,6 +212,32 @@ input, textarea { border: 0; }
     animation-name: fadeInDown;
 }
 
+pre {
+    background: #323232;
+    padding: $main-margin/2;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px; 
+    margin: $main-margin/2 0;
+    white-space: pre;
+}
+
+code {
+    color: #ececec;
+    @include font-size(15px);
+}
+
+blockquote {
+     @include font-family('ubuntulight_italic');
+     border-left: 10px solid gray;
+     border-right: 10px solid gray;
+     background: #ddd;
+     text-align: center;
+     padding: $main-margin/4 $main-margin/2;
+     margin: $main-margin/2 0;
+     @include font-size(20px);
+}
+
+
 
 
 

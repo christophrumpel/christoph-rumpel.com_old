@@ -86,7 +86,7 @@
 		</div>
 
 		<div>
-			<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+			<input name="submit" type="submit" class="btn btn-comment" id="submit" tabindex="5" value="Submit Comment" />
 			<?php comment_id_fields(); ?>
 		</div>
 		

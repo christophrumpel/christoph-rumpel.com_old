@@ -38,14 +38,21 @@
 		@include vendor(transition, color 0.5s); 
 	}
 	
-	p a:hover { 
+	a:hover { 
 		color: darken($color, 10% );
-		text-decoration: underline;
 	}
+
+	p a:hover { text-decoration: underline; }
 	
 	.theme-color { color: $color; }
 	
-    .logo__circle { @include circle(60px, $color ); }
+    .logo__circle { 
+    	@include vendor(transition, background 0.5s);
+    	@include circle(60px, $color ); 
+    	&:hover {
+    		background: darken($color, 10% );
+    	}
+    }
     .main-header { border-bottom: 5px solid $color; }
     .separator { 
     	background: $color; 
@@ -93,5 +100,18 @@
 
 	@include media-query(palm) {
 		.main-nav .main-nav__item:hover { background-color: $color; }
+	}
+
+	.articles__item {
+		border-bottom: 2px solid $color; 
+	}
+
+	.articles__date {
+		color: $color;
+	}
+
+	.article__intro {
+		border-bottom: 2px solid $color;
+		border-top: 2px solid $color;
 	}
 }
