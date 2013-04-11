@@ -246,32 +246,43 @@
 	}
 
 .main-footer {
-	@include font-family('ubuntulight');
-	@include font-size(14px);
 	position: relative;
 	padding: 20px 0;
 	background-color: $darkgrey;
 	color: $grey;
-	
-	a:hover { text-decoration: underline; }
-	
-	.main-footer__left { 
-		text-align: center; 
-		@include media-query(desk){ text-align: left; }
-	}
-	.main-footer__middle { 
-		text-align: center; 
-		@include media-query(desk){ text-align: center; }
-	}
-	.main-footer__right { 
-		text-align: center; 
-		@include media-query(desk){ text-align: right; }
+}
+
+	.main-footer__grid {
+		@include font-family('ubuntulight');
+		@include font-size(14px);
+		position: relative;
+		padding: 20px 0;
+		
+		a:hover { text-decoration: underline; }
+		
+		.main-footer__left { 
+			text-align: center; 
+			@include media-query(desk){ text-align: left; }
+		}
+		.main-footer__middle { 
+			text-align: center; 
+			@include media-query(desk){ text-align: center; }
+		}
+		.main-footer__right { 
+			text-align: center; 
+			@include media-query(desk){ text-align: right; }
+		}
+
+		.footer-nav {
+			margin-bottom: 0;
+		}
 	}
 
-	.footer-nav {
-		margin-bottom: 0;
+	.backtotop {
+		position: absolute;
+		right: $main-margin;
+		bottom: $main-margin/2;
 	}
-}
 /*-----------------------------------------------------------------------------------*/
 /*	*END* GENERAL
 /*-----------------------------------------------------------------------------------*/
@@ -641,19 +652,20 @@
 
 	.articles__date {
 		position: relative;
-		top: 10px;
+		top: 2px;
+		@include font-size(16px);
 
 		@include media-query(palm){
-			@include font-size(18px);
+			
 			top: 0;
 		}		
 	}
 
 	.articles__title {
 		@include font-family('ubuntubold');
-
+		@include font-size(24px);
 		@include media-query(palm){
-			@include font-size(24px);
+			
 		}		
 	}
 
@@ -686,15 +698,20 @@
 
 
 	.article__title {
-
+		@include font-family('ubuntubold');
 		@include media-query(palm){
+			@include font-size(24px);
 		}
 
 	}
 
 	.article__subheadline {
 		@include font-size(28px);
-		margin: $main-margin/2 0 $main-margin/4 0;
+		margin: $main-margin 0 $main-margin/4 0;
+
+		@include media-query(palm){
+			@include font-size(20px);
+		}
 	}
 	
 	.article__date {

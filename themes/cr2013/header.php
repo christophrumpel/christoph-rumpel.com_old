@@ -120,4 +120,5 @@
 		</header>
 
 		<div class="wrapper content-wrapper">
+			<a id="top"></a>
 

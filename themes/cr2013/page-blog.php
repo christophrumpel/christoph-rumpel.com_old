@@ -12,7 +12,7 @@ Template Name: Blog
 		<div class="separator seperator--blog">
 			<div class="separator__content"><span>"</span></div>
 		</div>
-		<p class="blog-intro">I like to write about my experiences in web-design and web-developing. We have an amzing community out there and i am proud to be part of that. In the last years i was able to learn a lot from great people in this community, who were not afraid of sharing their experiences and code in order to help others like me. This blog says “Thank You” to all of them and is hopefully helpful to others.</p>
+		<p class="blog-intro">I like to write about my experiences in web-design and web-developing. We have an amazing community out there and i am proud to be part of that. In the last years I was able to learn a lot from great people in this community, who were not afraid of sharing their experiences and code in order to help others like me. This blog is considered to be a huge “Thank You” to all of them and is hopefully helpful to others.</p>
 		<div class="separator seperator--blog">
 			<div class="separator__content"><span>"</span></div>
 		</div>
