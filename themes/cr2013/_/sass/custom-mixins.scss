@@ -54,6 +54,7 @@
     	}
     }
     .main-header { border-bottom: 5px solid $color; }
+
     .separator { 
     	background: $color; 
     	.separator__content { @include circle(36px, $color ); }
