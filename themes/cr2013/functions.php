@@ -68,7 +68,7 @@
                 foreach ((array) $menu_items as $key => $menu_item) {
                     $title = $menu_item->title;
                     $url = $menu_item->url;
-                    $menu_list .= "\t\t\t\t\t". '<li class="main-nav__item main-nav__'.$title.'"><div class="arrow"></div><a href="'. $url .'">'. $title .'</a></li>' ."\n";
+                    $menu_list .= "\t\t\t\t\t". '<li class="main-nav__item main-nav__'.strtolower($title).'"><div class="arrow"></div><a href="'. $url .'">'. $title .'</a></li>' ."\n";
                 }
                 $menu_list .= "\t\t\t\t". '</ul>' ."\n";
                 $menu_list .= "\t\t\t". '<a href="#" class="nav__pull">Menu</a></nav>' ."\n";
