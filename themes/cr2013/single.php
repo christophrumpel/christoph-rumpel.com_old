@@ -11,7 +11,7 @@
                 </article>
             </div>
             <div class="grid three-tenths hide--palm">
-                Sidebar
+                
             </div>
         </div>
     <?php endwhile; endif; ?>
