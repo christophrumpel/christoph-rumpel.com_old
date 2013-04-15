@@ -706,11 +706,6 @@
 		margin: 0;
 	}
 
-	img {
-		@include media-query(palm){
-			width: 100%;
-		}
-	}
 }
 
 
@@ -797,6 +792,10 @@
 		float: left;
 		margin-bottom: $main-margin/2;
 		text-align: center;
+
+		@include media-query(palm){
+			width: 100% !important;
+		}
 	}
 		.wp-caption-text{
 			@include font-family('ubuntulight_italic');
