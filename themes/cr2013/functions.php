@@ -85,7 +85,7 @@
                 $classes[] = 'page--portfolio';
             else if ( is_page(26))
                 $classes[] = 'page--contact';
-            else if ( is_page(43))
+            else if ( is_page(47))
                 $classes[] = 'page--blog';
             else if ( is_page(404))
                 $classes[] = 'page--404';
