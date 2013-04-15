@@ -8,7 +8,7 @@
             require_once($locale_file);
 	
 	// Add RSS links to <head> section
-	automatic_feed_links();
+    add_theme_support('automatic-feed-links');
 	
 	// Load jQuery
 	// if ( !function_exists(core_mods) ) {
@@ -85,6 +85,8 @@
                 $classes[] = 'page--portfolio';
             else if ( is_page(26))
                 $classes[] = 'page--contact';
+            else if ( is_page(43))
+                $classes[] = 'page--blog';
             else if ( is_page(404))
                 $classes[] = 'page--404';
             return $classes;
@@ -107,5 +109,17 @@
         wp_deregister_script( 'comment-reply' );
     }
     add_action('init','clean_header');
+
+    // Cutomizing TinyMCE
+    function make_mce_awesome( $init ) {
+        $init['theme_advanced_blockformats'] = 'h2,h3,h4,p';
+        $init['theme_advanced_disable'] = 'underline,spellchecker,wp_help';
+        $init['theme_advanced_text_colors'] = '0f3156,636466,0486d3';
+        $init['theme_advanced_buttons2_add'] = 'styleselect';
+        $init['theme_advanced_styles'] = "subheadline=article__subheadline,ul headline=ul__headline,Rounded Corners=rounded,Bold Font=font-bold,intro=article__intro, Quote Author=quote-author,Quote Intern=quote--intern";
+        return $init;
+    }
+ 
+    add_filter('tiny_mce_before_init', 'make_mce_awesome');
 
 ?>

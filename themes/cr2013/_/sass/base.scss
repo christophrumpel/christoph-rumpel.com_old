@@ -212,6 +212,21 @@ input, textarea { border: 0; }
     animation-name: fadeInDown;
 }
 
+pre {
+    background: #323232;
+    padding: $main-margin/2;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px; 
+    margin: $main-margin/2 0;
+    white-space: pre;
+}
+
+code {
+    color: #ececec;
+    @include font-size(15px);
+}
+
+
 
 
 

@@ -43,6 +43,19 @@
 		top: -2px;
 		color: #fff;
 	}
+
+	&.seperator--blog { 
+		margin-bottom: $main-margin;
+		margin-top: $main-margin;
+		span {
+			color: #fff;
+			@include font-size(55px);
+			@include font-family('ubuntulight_italic');
+			position: relative;
+			right: 8px;
+			top: -2px;
+		}
+	}
 }
 
 .btn { 
@@ -233,32 +246,43 @@
 	}
 
 .main-footer {
-	@include font-family('ubuntulight');
-	@include font-size(14px);
 	position: relative;
 	padding: 20px 0;
 	background-color: $darkgrey;
 	color: $grey;
-	
-	a:hover { text-decoration: underline; }
-	
-	.main-footer__left { 
-		text-align: center; 
-		@include media-query(desk){ text-align: left; }
-	}
-	.main-footer__middle { 
-		text-align: center; 
-		@include media-query(desk){ text-align: center; }
-	}
-	.main-footer__right { 
-		text-align: center; 
-		@include media-query(desk){ text-align: right; }
+}
+
+	.main-footer__grid {
+		@include font-family('ubuntulight');
+		@include font-size(14px);
+		position: relative;
+		padding: 20px 0;
+		
+		a:hover { text-decoration: underline; }
+		
+		.main-footer__left { 
+			text-align: center; 
+			@include media-query(desk){ text-align: left; }
+		}
+		.main-footer__middle { 
+			text-align: center; 
+			@include media-query(desk){ text-align: center; }
+		}
+		.main-footer__right { 
+			text-align: center; 
+			@include media-query(desk){ text-align: right; }
+		}
+
+		.footer-nav {
+			margin-bottom: 0;
+		}
 	}
 
-	.footer-nav {
-		margin-bottom: 0;
+	.backtotop {
+		position: absolute;
+		right: $main-margin;
+		bottom: $main-margin/2;
 	}
-}
 /*-----------------------------------------------------------------------------------*/
 /*	*END* GENERAL
 /*-----------------------------------------------------------------------------------*/
@@ -603,6 +627,170 @@
 /*	*END* portfolio
 /*-----------------------------------------------------------------------------------*/
 
+
+/*-----------------------------------------------------------------------------------*/
+/*	*START* Blog Overview
+/*-----------------------------------------------------------------------------------*/
+
+.articles {
+	margin-left: 0;
+}
+
+.blog-intro {
+	@include font-family('ubuntulight_italic');
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	@include font-size(20px);
+	line-height: 1.3em;
+}
+
+.articles__item {
+	list-style: none;
+	padding: $main-margin/4 0;
+}
+
+	.articles__date {
+		position: relative;
+		top: 2px;
+		@include font-size(16px);
+
+		@include media-query(palm){
+			
+			top: 0;
+		}		
+	}
+
+	.articles__title {
+		@include font-family('ubuntubold');
+		@include font-size(24px);
+		@include media-query(palm){
+			
+		}		
+	}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	*END* Blog
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	*START*  Blog Detail
+/*-----------------------------------------------------------------------------------*/
+.article {
+	
+	ul {
+		margin-top: $main-margin/4;
+		margin-bottom: $main-margin/2;
+	}
+
+	p {
+		margin: $main-margin/4 0;
+	}
+
+	blockquote p {
+		margin: 0;
+	}
+}
+
+
+
+	.article__title {
+		@include font-family('ubuntubold');
+		@include media-query(palm){
+			@include font-size(24px);
+		}
+
+	}
+
+	.article__subheadline {
+		@include font-size(28px);
+		margin: $main-margin 0 $main-margin/4 0;
+
+		@include media-query(palm){
+			@include font-size(20px);
+		}
+	}
+	
+	.article__date {
+		margin-bottom: $main-margin/2;
+	}
+
+	.toc {
+		margin: $main-margin/4 0 0 $main-margin/2;
+	}
+		.toc__title {
+			margin-bottom: $main-margin/4;
+		}
+		.toc__list {
+			margin-left: 23px;
+		}
+
+		.toc__list-chapter {
+			margin-left: 0;
+		}
+
+	article .article__intro {
+		@include font-family('ubuntumedium');
+		margin-bottom: $main-margin / 1.5;
+		padding: $main-margin/2 0px;
+	}
+
+	.ul__headline {
+		@include font-family('ubuntubold');
+		margin-top: $main-margin/4;
+	}
+
+	blockquote {
+		@include font-family('ubuntulight_italic');
+		border-left: 10px solid gray;
+		border-right: 10px solid gray;
+		background: #ddd;
+		text-align: center;
+		padding: $main-margin/4 $main-margin/2;
+		margin-top: $main-margin/2;
+		@include font-size(20px);
+	}
+
+	article .quote--intern {
+		@extend blockquote;
+		margin-bottom: $main-margin/2;
+	}
+
+	.quote--intern:before{
+	    content:"#{$open-quote}";
+	    content:open-quote;
+	}
+	.quote--intern:after{
+	    content:"#{$close-quote}";
+	    content:close-quote;
+	}
+
+	article .quote-author {
+		text-align: right;
+		@include font-size(14px);
+		margin: 0;
+	}
+	
+	/* Wrapper of post images with caption*/
+	.wp-caption {
+		float: left;
+		margin-bottom: $main-margin/2;
+		text-align: center;
+	}
+		.wp-caption-text{
+			@include font-family('ubuntulight_italic');
+			@include font-size(14px);
+		}
+	#disqus_thread {
+		margin-top: $main-margin/2;
+	}
+
+/*-----------------------------------------------------------------------------------*/
+/*	*END* Blog Detail
+/*-----------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------*/
 /*	*START* CONTACT

@@ -1,7 +1,8 @@
+		<a href="#top" class="backtotop">↑ Back to top</a>
 	</div>
 	<footer class="main-footer">
 		<div class="wrapper">
-			<div class="grid-wrapper main-footer">
+			<div class="grid-wrapper main-footer__grid">
 				<div class="grid one-third palm-one-whole main-footer__left">© 2013 Christoph Rumpel</div>
 				<div class="grid one-third palm-one-whole main-footer__middle">
 					Built with <a target="_blank" href="http://wordpress.org/">Wordpress</a>, <a target="_blank" href="http://inuitcss.com/">inuitcss</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/Love">love</a>
@@ -29,7 +30,7 @@
 <!-- jQuery is called via the Wordpress-friendly way via functions.php -->
 
 <!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script> 
+<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js" async></script> 
 <script>
 
   var _gaq = _gaq || [];

@@ -1,31 +1,22 @@
 <?php get_header(); ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+        <div class=" grid-wrapper">
+            <div class="grid seven-tenths palm-one-whole">
+                <article <?php post_class('article') ?> id="post-<?php the_ID(); ?>">
+                    <h3 class="article__title"><?php the_title(); ?></h3>
+                    <h5 class="article__date"><?php the_date(); ?></h5>
+                    <?php the_content(); ?>
+                </article>
+            </div>
+            <div class="grid three-tenths hide--palm">
+                Sidebar
+            </div>
+        </div>
+    <?php endwhile; endif; ?>
 
-			<div class="entry-content">
-				
-				<?php the_content(); ?>
+    <?php comments_template('', true); ?>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
-			
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-
-			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
-		</article>
-
-	<?php comments_template(); ?>
-
-	<?php endwhile; endif; ?>
-	
-<?php get_sidebar(); ?>
-
+         
 <?php get_footer(); ?>

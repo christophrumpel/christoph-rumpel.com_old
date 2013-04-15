@@ -2,6 +2,7 @@
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
+wp-content/themes/cr2013/_/sass/.sass-cache/
 wp-content/upgrade/
 wp-content/backup-db/
 wp-content/advanced-cache.php
