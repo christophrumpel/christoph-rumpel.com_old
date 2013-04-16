@@ -199,14 +199,11 @@
 				&.main-nav__blog .arrow { left: 20px; }
 				&.main-nav__contact .arrow { left: 20px; }
 
-			@include media-query(palm) {
-				background-color: $grey;
+				@include media-query(palm) {
+					background-color: $grey; 
+				}
 			}
 
-			}
-
-
-			
 		}
 
 		.main-nav__home a:hover { color: $cyan; }
@@ -295,6 +292,8 @@
 		.footer-nav {
 			margin-bottom: 0;
 		}
+			.footer-nav__item { margin-left: 5px; }
+			.footer-nav__item:first-child { margin-left: 0px; }
 	}
 
 	.backtotop {
