@@ -99,10 +99,6 @@
 
 	.btn:hover, .btn:active { background-color: $color-dark; }
 
-	@include media-query(palm) {
-		.main-nav .main-nav__item:hover { background-color: $color; }
-	}
-
 	.articles__item {
 		border-bottom: 2px solid $color; 
 	}

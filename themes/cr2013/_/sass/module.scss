@@ -198,7 +198,13 @@
 				&.main-nav__portfolio .arrow { left: 20px; }
 				&.main-nav__blog .arrow { left: 20px; }
 				&.main-nav__contact .arrow { left: 20px; }
+
+			@include media-query(palm) {
+				background-color: $grey;
 			}
+
+			}
+
 
 			
 		}
