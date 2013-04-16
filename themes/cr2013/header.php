@@ -56,7 +56,7 @@
 	<!-- FB Meta -->
 	<meta property="og:image" content="http://christoph-rumpel.com/wp-content/themes/cr2013/_/img/screenshot_fb.png">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.christoph-rumpel.com">
+	<meta property="og:url" content="<?php echo get_permalink( $post->ID ); ?>">
 	<meta property="og:title" content="<?php bloginfo('description'); ?>">
 	<meta property="og:description" content="Hi! I am Christoph, a passionate web developer from beautiful Austria. I want to make the web look and feel AWESOME on all devices.">
 	<link rel="canonical" href="http://www.christoph-rumpel.com">
