@@ -102,7 +102,7 @@
 </head>
 	
 <body <?php body_class($class); ?>>
-
+		<a id="top"></a>
 		<header class="main-header">
 			<div class="wrapper cf">
 				<div class="logo fadeInDown">
@@ -120,5 +120,4 @@
 		</header>
 
 		<div class="wrapper content-wrapper">
-			<a id="top"></a>
 
