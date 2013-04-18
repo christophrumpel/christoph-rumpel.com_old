@@ -2,14 +2,15 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+	 width="189px" height="189px" viewBox="0 0 189 189" enable-background="new 0 0 189 189" xml:space="preserve">
 <g>
-	<path fill="#65AA9C" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M220.667,149.765
-		c0,38.851-31.589,70.349-70.552,70.349c-38.973,0-70.55-31.498-70.55-70.349c0-38.856,31.577-70.354,70.55-70.354
-		C189.078,79.411,220.667,110.909,220.667,149.765z"/>
-	<g id="IsCWpM_1_" display="none">
-		
-			<image display="inline" overflow="visible" width="201" height="201" id="IsCWpM" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWgBaAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+	<g>
+		<path fill="#65AA9C" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M164.667,93.766
+			c0,38.851-31.589,70.349-70.552,70.349c-38.974,0-70.551-31.498-70.551-70.349c0-38.857,31.577-70.355,70.551-70.355
+			C133.078,23.41,164.667,54.908,164.667,93.766z"/>
+		<g id="IsCWpM_1_" display="none">
+			
+				<image display="inline" overflow="visible" width="201" height="201" id="IsCWpM" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWgBaAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAAV5AAAIkQAAEen/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
 JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIAMsAywMBIgACEQEDEQH/
@@ -89,11 +90,12 @@ zEU9WNZTI1ULPw+6YNHvdpTLyDIqIl1iAttQUk3EGfJlCTtXsiE5+cwmq3kTS0F6UykpQ+FPeYTS
 0bYaaTkF5OdRynlNlWshZlquCxadCoU/uZ41DN+yuX9Nyo2O8qdTTibCZEHpSYGzeTM+U2HqMWGf
 Fm64lA5yIwsBTy8krBA2bZpaVX9RU0JlpvPRCXqgfmVQtxrGok/Cn2xIcvgrGEPpu10gkaDeIKqZ
 blKo5AcaepVvbE6GvStIuSoqQeq0RqgOpGULbP8AnEvxiehPtiQZwaShPrMf3NUhkG+ayf8ArEBd
-fWLeOVLYw/qVP1QDT0iCsf1HNdX6u7/BP//Z" transform="matrix(0.8004 0 0 0.8004 69.6797 69.5645)">
-		</image>
+fWLeOVLYw/qVP1QDT0iCsf1HNdX6u7/BP//Z" transform="matrix(0.8004 0 0 0.8004 13.6797 13.5645)">
+			</image>
+		</g>
 	</g>
+	<circle fill="#FCFCFC" cx="65" cy="66.25" r="6.75"/>
+	<circle fill="#FCFCFC" cx="118" cy="66.25" r="6.75"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="3.3463" stroke-miterlimit="10" d="M62.088,132.577c0,0,31.73-33.095,64.824,0"/>
 </g>
-<circle fill="#FCFCFC" cx="121" cy="122.25" r="6.75"/>
-<circle fill="#FCFCFC" cx="174" cy="122.25" r="6.75"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="3.3463" stroke-miterlimit="10" d="M118.087,188.577c0,0,31.73-33.095,64.825,0"/>
 </svg>
