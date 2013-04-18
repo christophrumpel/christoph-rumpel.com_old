@@ -41,7 +41,11 @@
     		'after_title'   => '</h2>'
     	));
     }
-        // Add various supports
+    
+    // remove sign in error messages
+    add_filter('login_errors',create_function('$a', "return null;"));
+
+    // Add various supports
     add_theme_support( 'post-thumbnails' ); 
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 
