@@ -226,6 +226,10 @@ code {
     @include font-size(15px);
 }
 
+strong {
+    @include font-family('ubuntumedium'); 
+}
+
 
 
 
