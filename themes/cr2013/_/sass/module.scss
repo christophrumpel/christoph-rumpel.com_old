@@ -799,7 +799,7 @@
 	/* Wrapper of post images with caption*/
 	.wp-caption {
 		float: left;
-		margin-bottom: $main-margin/2;
+		margin-bottom: $main-margin/4;
 		text-align: center;
 
 		@include media-query(palm){
