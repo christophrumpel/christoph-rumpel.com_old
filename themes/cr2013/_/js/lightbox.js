@@ -48,8 +48,8 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = '../wp-content/themes/cr2013/_/img/loading.gif';
-      this.fileCloseImage = '../wp-content/themes/cr2013/_/img/close.png';
+      this.fileLoadingImage = '../../../wp-content/themes/cr2013/_/img/loading.gif';
+      this.fileCloseImage = '../../../wp-content/themes/cr2013/_/img/close.png';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
       this.labelImage = "Image";
