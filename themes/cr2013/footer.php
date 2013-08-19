@@ -14,6 +14,7 @@
 							<!-- <li class="footer-nav__item footer-nav__github"><a href="#">Github</a></li> -->
 							<li class="footer-nav__item footer-nav__codepen"><a href="http://codepen.io/christophrumpel" target="_blank">Codepen</a></li>
 							<li class="footer-nav__item footer-nav__treehouse"><a href="http://teamtreehouse.com/christophrumpel" target="_blank">Treehouse</a></li>
+							<li class="footer-nav__item footer-nav__treehouse"><a href="https://plus.google.com/u/0/116404537718858902366?rel=author" target="_blank">Google</a></li>
 							<!-- <li class="footer-nav__item footer-nav__rss"><a href="#">RSS</a></li> -->
 						</ul>
 					</nav>
