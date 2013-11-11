@@ -51,12 +51,12 @@
 
     // Menus
         // // Register Menu
-        // function register_my_menus() {
-        //   register_nav_menus(
-        //     array( 'main-nav' => __( 'Main Nav' ) )
-        //   );
-        // }
-        // add_action( 'init', 'register_my_menus' );
+        function register_my_menus() {
+           register_nav_menus(
+             array( 'main-nav' => __( 'Main Nav' ) )
+           );
+         }
+         add_action( 'init', 'register_my_menus' );
 
         // custom menu example @ http://digwp.com/2011/11/html-formatting-custom-menus/
         function clean_custom_menus() {
